@@ -42,10 +42,11 @@ KEYSaddr = 0x20
 
 LCD_RST_PIN=23
 
-URL='http://192.168____'
-MPC_URL='http://192.168____:13579'
-VLC_URL='http://192.168____:8080'
+URL='http://192.168._'
+MPC_URL='http://192.168._:13579'
+VLC_URL='http://192.168._:8080'
 VLC_PASS='vlc'
+FILE_STORE='/home/pi/python/volumio_files/' # '/'!
 
 # debug only
 char_print=False
@@ -975,13 +976,13 @@ class VolumioReader:
               else self.vState.albumArt
 
         print(url)
-        (r,s) = self.request(url)
+        (r,s) = self.request_file(url)
         if(not s):
             return
 
         try:
-            img = io.BytesIO(r.content)
-            self.printGraphics(img)
+            #img = r #io.BytesIO(r.content)
+            self.printGraphics(FILE_STORE+'current')
         except pygame.error as e:
             print(e)
             # tylko wypisanie błędu
@@ -1607,6 +1608,18 @@ class VolumioReader:
 
         print('reader-end-process:{:d}'.format(key))
 
+    def request_file(self,url):
+        download_file=FILE_STORE+'current'
+        os.popen('rm -f '+download_file+'; curl '+url+' -o '+download_file)
+        respStatus=False
+        resp=None
+        if os.path.exists(download_file):
+            with open(download_file,'rb') as d_file:
+                resp = d_file.read()
+            respStatus=True
+
+        return (resp,respStatus)
+
     def request(self,url,p_tout=10,p_pass=''):
         #while(self.reqLock):
         #    time.sleep(DELAY_ERR)
@@ -1618,15 +1631,11 @@ class VolumioReader:
         respStatus=False
         self.reqLock=True
         try:
+            s = requests.Session()
             if(p_pass==''):
-                ssl_verify = False #True
-                s = requests.Session()
-                #if('tidal.com' in url):
-                #    s.cert = '/home/pi/python/tidal.com.crt'
-                #elif(url[:5]=='https'):
-                #    ssl_verify = False
-                #
-                resp=s.get(url,timeout=p_tout,verify=ssl_verify)
+                donwload_file=FILE_STORE+'current'
+                os.popen('rm -f '+donwload_file+'; curl '+url+' -o '+donwload_file)
+                resp=s.get(url,timeout=p_tout,verify=False)
             else:
                 resp=s.get(url,timeout=p_tout,auth=('',p_pass))
             respStatus=True
@@ -1838,6 +1847,17 @@ def read_args():
 
 def main():
     global GUI
+    # w momencie startu systemu ściąganie plików po https może nie działać (nie wiem, dlaczego)
+    # jeżeli nie da się ściągnąć pliku po https, to prawdopodobnie należy poczekać
+    # skrypt (cron *****) uruchomi program w kolejnej minucie i możliwe, że wtedy to zadziała
+    sample_https_file = FILE_STORE+'volumio_download_sample'
+    os.popen('rm -f '+sample_https_file+'; curl https://raw.githubusercontent.com/krzys9876/htpc_rig/main/README.md -o '+sample_https_file)
+    file_exists = os.path.exists(sample_https_file)
+    if not file_exists:
+        print("cannot download sample https file")
+        exit(1)
+    else:
+        print("https ok")
     
     flags = vars(read_args())
     #for key in flags:

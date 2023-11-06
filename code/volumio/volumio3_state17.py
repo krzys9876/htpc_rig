@@ -42,9 +42,9 @@ KEYSaddr = 0x20
 
 LCD_RST_PIN=23
 
-URL='http://192.168._'
-MPC_URL='http://192.168._:13579'
-VLC_URL='http://192.168._:8080'
+URL='http://192.168.3.122'
+MPC_URL='http://192.168.3.97:13579'
+VLC_URL='http://192.168.3.97:8080'
 VLC_PASS='vlc'
 FILE_STORE='/home/pi/python/volumio_files/' # '/'!
 
@@ -975,14 +975,19 @@ class VolumioReader:
               if (len(self.vState.albumArt)>0 and self.vState.albumArt[0:1]=='/') \
               else self.vState.albumArt
 
-        print(url)
-        (r,s) = self.request_file(url)
-        if(not s):
-            return
+#        print(url)
+#        (r2,s2) = self.request_file(url)
+#        if s2:
+#            self.printGraphics(FILE_STORE+'current')
+#            return
 
+        (r,s) = self.request(url)
+        if not s:
+            return
+        
         try:
-            #img = r #io.BytesIO(r.content)
-            self.printGraphics(FILE_STORE+'current')
+            img = io.BytesIO(r.content)
+            self.printGraphics(img)
         except pygame.error as e:
             print(e)
             # tylko wypisanie błędu
@@ -1608,15 +1613,27 @@ class VolumioReader:
 
         print('reader-end-process:{:d}'.format(key))
 
+    def wait_for_file(self,file,seconds=10):
+        sec=0
+        while sec<seconds:
+            if os.path.exists(file):
+                return
+            sec+=1
+            time.sleep(1)
+        
+    
     def request_file(self,url):
         download_file=FILE_STORE+'current'
-        os.popen('rm -f '+download_file+'; curl '+url+' -o '+download_file)
         respStatus=False
         resp=None
+        if url=='':
+            return (resp,respStatus)
+        os.popen('rm -f '+download_file+'; curl '+url+' -o '+download_file)
         if os.path.exists(download_file):
             with open(download_file,'rb') as d_file:
                 resp = d_file.read()
-            respStatus=True
+            self.wait_for_file(download_file)
+            respStatus=os.path.exists(download_file)
 
         return (resp,respStatus)
 
@@ -1850,14 +1867,15 @@ def main():
     # w momencie startu systemu ściąganie plików po https może nie działać (nie wiem, dlaczego)
     # jeżeli nie da się ściągnąć pliku po https, to prawdopodobnie należy poczekać
     # skrypt (cron *****) uruchomi program w kolejnej minucie i możliwe, że wtedy to zadziała
-    sample_https_file = FILE_STORE+'volumio_download_sample'
-    os.popen('rm -f '+sample_https_file+'; curl https://raw.githubusercontent.com/krzys9876/htpc_rig/main/README.md -o '+sample_https_file)
-    file_exists = os.path.exists(sample_https_file)
-    if not file_exists:
-        print("cannot download sample https file")
-        exit(1)
-    else:
-        print("https ok")
+#    sample_https_file = FILE_STORE+'volumio_download_sample'
+#    os.popen('rm -f '+sample_https_file+'; curl https://raw.githubusercontent.com/krzys9876/htpc_rig/main/README.md -o '+sample_https_file)
+#    time.sleep(2)
+#    file_exists = os.path.exists(sample_https_file)
+#    if not file_exists:
+#        print("cannot download sample https file")
+#        exit(1)
+#    else:
+#        print("https ok")
     
     flags = vars(read_args())
     #for key in flags:

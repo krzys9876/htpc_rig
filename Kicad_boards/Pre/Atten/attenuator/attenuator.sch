@@ -1,0 +1,1740 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Relay:FRT5_separated K1
+U 3 1 5FB7CE68
+P 2800 6600
+F 0 "K1" V 3092 6600 50  0000 C CNN
+F 1 "FRT5_separated" V 3001 6600 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 3000 6500 50  0001 L CNN
+F 3 "https://www.elpro.org/de/index.php?controller=attachment&id_attachment=8663" H 2800 6600 50  0001 C CNN
+	3    2800 6600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Relay:FRT5_separated K1
+U 1 1 5FB7E93E
+P 2800 9400
+F 0 "K1" V 3081 9400 50  0000 C CNN
+F 1 "FRT5_separated" V 2990 9400 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 3000 9300 50  0001 L CNN
+F 3 "https://www.elpro.org/de/index.php?controller=attachment&id_attachment=8663" H 2800 9400 50  0001 C CNN
+	1    2800 9400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Relay:FRT5_separated K1
+U 2 1 5FB7FE57
+P 2800 8000
+F 0 "K1" V 3081 8000 50  0000 C CNN
+F 1 "FRT5_separated" V 2990 8000 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 3000 7900 50  0001 L CNN
+F 3 "https://www.elpro.org/de/index.php?controller=attachment&id_attachment=8663" H 2800 8000 50  0001 C CNN
+	2    2800 8000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5FBB92E1
+P 2450 6950
+F 0 "R1" H 2520 6996 50  0000 L CNN
+F 1 "R" H 2520 6905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2380 6950 50  0001 C CNN
+F 3 "~" H 2450 6950 50  0001 C CNN
+	1    2450 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5FBB9A61
+P 2450 8300
+F 0 "R2" H 2520 8346 50  0000 L CNN
+F 1 "R" H 2520 8255 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2380 8300 50  0001 C CNN
+F 3 "~" H 2450 8300 50  0001 C CNN
+	1    2450 8300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5FBB9FD3
+P 2800 6200
+F 0 "R3" V 2593 6200 50  0000 C CNN
+F 1 "R" V 2684 6200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2730 6200 50  0001 C CNN
+F 3 "~" H 2800 6200 50  0001 C CNN
+	1    2800 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5FBBA401
+P 2800 7600
+F 0 "R4" V 2593 7600 50  0000 C CNN
+F 1 "R" V 2684 7600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2730 7600 50  0001 C CNN
+F 3 "~" H 2800 7600 50  0001 C CNN
+	1    2800 7600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2650 6200 2450 6200
+Text Label 1800 6200 0    50   ~ 0
+IN_L
+Wire Wire Line
+	2500 6500 2450 6500
+Wire Wire Line
+	2450 6500 2450 6200
+Connection ~ 2450 6200
+Wire Wire Line
+	3100 6600 3150 6600
+Wire Wire Line
+	3150 6600 3150 6200
+Wire Wire Line
+	3150 6200 2950 6200
+Wire Wire Line
+	2450 6800 2450 6700
+Wire Wire Line
+	2450 6700 2500 6700
+Wire Wire Line
+	2450 8150 2450 8100
+Wire Wire Line
+	2450 8100 2500 8100
+Wire Wire Line
+	2500 7900 2450 7900
+Wire Wire Line
+	2450 7900 2450 7600
+Wire Wire Line
+	2450 7600 2650 7600
+Wire Wire Line
+	2950 7600 3150 7600
+Wire Wire Line
+	3150 7600 3150 8000
+Wire Wire Line
+	3150 8000 3100 8000
+Connection ~ 2450 7600
+Text Label 1800 7600 0    50   ~ 0
+IN_R
+Wire Wire Line
+	2450 7100 2450 7150
+Connection ~ 2450 7150
+Text Label 1800 7150 0    50   ~ 0
+GND_L
+Wire Wire Line
+	2450 8450 2450 8500
+Connection ~ 2450 8500
+Text Label 1800 8500 0    50   ~ 0
+GND_R
+$Comp
+L Relay:FRT5_separated K2
+U 1 1 5FC4E3F1
+P 4350 9400
+F 0 "K2" V 4631 9400 50  0000 C CNN
+F 1 "FRT5_separated" V 4540 9400 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 4550 9300 50  0001 L CNN
+F 3 "https://www.elpro.org/de/index.php?controller=attachment&id_attachment=8663" H 4350 9400 50  0001 C CNN
+	1    4350 9400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Relay:FRT5_separated K2
+U 2 1 5FC4E99F
+P 4350 8000
+F 0 "K2" V 4631 8000 50  0000 C CNN
+F 1 "FRT5_separated" V 4540 8000 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 4550 7900 50  0001 L CNN
+F 3 "https://www.elpro.org/de/index.php?controller=attachment&id_attachment=8663" H 4350 8000 50  0001 C CNN
+	2    4350 8000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5FC4E9A9
+P 4000 6950
+F 0 "R5" H 4070 6996 50  0000 L CNN
+F 1 "R" H 4070 6905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3930 6950 50  0001 C CNN
+F 3 "~" H 4000 6950 50  0001 C CNN
+	1    4000 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5FC4E9B3
+P 4000 8300
+F 0 "R6" H 4070 8346 50  0000 L CNN
+F 1 "R" H 4070 8255 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3930 8300 50  0001 C CNN
+F 3 "~" H 4000 8300 50  0001 C CNN
+	1    4000 8300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5FC4E9BD
+P 4350 6200
+F 0 "R7" V 4143 6200 50  0000 C CNN
+F 1 "R" V 4234 6200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4280 6200 50  0001 C CNN
+F 3 "~" H 4350 6200 50  0001 C CNN
+	1    4350 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5FC4E9C7
+P 4350 7600
+F 0 "R8" V 4143 7600 50  0000 C CNN
+F 1 "R" V 4234 7600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4280 7600 50  0001 C CNN
+F 3 "~" H 4350 7600 50  0001 C CNN
+	1    4350 7600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4200 6200 4000 6200
+Wire Wire Line
+	4050 6500 4000 6500
+Wire Wire Line
+	4000 6500 4000 6200
+Connection ~ 4000 6200
+Wire Wire Line
+	4650 6600 4700 6600
+Wire Wire Line
+	4700 6600 4700 6200
+Wire Wire Line
+	4700 6200 4500 6200
+Wire Wire Line
+	4000 6800 4000 6700
+Wire Wire Line
+	4000 6700 4050 6700
+Wire Wire Line
+	4000 8150 4000 8100
+Wire Wire Line
+	4000 8100 4050 8100
+Wire Wire Line
+	4050 7900 4000 7900
+Wire Wire Line
+	4000 7900 4000 7600
+Wire Wire Line
+	4000 7600 4200 7600
+Wire Wire Line
+	4500 7600 4700 7600
+Wire Wire Line
+	4700 7600 4700 8000
+Wire Wire Line
+	4700 8000 4650 8000
+Connection ~ 4000 7600
+Wire Wire Line
+	4000 7100 4000 7150
+Connection ~ 4000 7150
+Wire Wire Line
+	4000 8450 4000 8500
+Connection ~ 4000 8500
+$Comp
+L Relay:FRT5_separated K3
+U 1 1 5FC60AB2
+P 5900 9400
+F 0 "K3" V 6181 9400 50  0000 C CNN
+F 1 "FRT5_separated" V 6090 9400 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 6100 9300 50  0001 L CNN
+F 3 "https://www.elpro.org/de/index.php?controller=attachment&id_attachment=8663" H 5900 9400 50  0001 C CNN
+	1    5900 9400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Relay:FRT5_separated K3
+U 2 1 5FC61114
+P 5900 8000
+F 0 "K3" V 6181 8000 50  0000 C CNN
+F 1 "FRT5_separated" V 6090 8000 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 6100 7900 50  0001 L CNN
+F 3 "https://www.elpro.org/de/index.php?controller=attachment&id_attachment=8663" H 5900 8000 50  0001 C CNN
+	2    5900 8000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5FC6111E
+P 5550 6950
+F 0 "R9" H 5620 6996 50  0000 L CNN
+F 1 "R" H 5620 6905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5480 6950 50  0001 C CNN
+F 3 "~" H 5550 6950 50  0001 C CNN
+	1    5550 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5FC61128
+P 5550 8300
+F 0 "R10" H 5620 8346 50  0000 L CNN
+F 1 "R" H 5620 8255 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5480 8300 50  0001 C CNN
+F 3 "~" H 5550 8300 50  0001 C CNN
+	1    5550 8300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5FC61132
+P 5900 6200
+F 0 "R11" V 5693 6200 50  0000 C CNN
+F 1 "R" V 5784 6200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5830 6200 50  0001 C CNN
+F 3 "~" H 5900 6200 50  0001 C CNN
+	1    5900 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 5FC6113C
+P 5900 7600
+F 0 "R12" V 5693 7600 50  0000 C CNN
+F 1 "R" V 5784 7600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5830 7600 50  0001 C CNN
+F 3 "~" H 5900 7600 50  0001 C CNN
+	1    5900 7600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5750 6200 5550 6200
+Wire Wire Line
+	5600 6500 5550 6500
+Wire Wire Line
+	5550 6500 5550 6200
+Connection ~ 5550 6200
+Wire Wire Line
+	6200 6600 6250 6600
+Wire Wire Line
+	6250 6600 6250 6200
+Wire Wire Line
+	6250 6200 6050 6200
+Wire Wire Line
+	5550 6800 5550 6700
+Wire Wire Line
+	5550 6700 5600 6700
+Wire Wire Line
+	5550 8150 5550 8100
+Wire Wire Line
+	5550 8100 5600 8100
+Wire Wire Line
+	5600 7900 5550 7900
+Wire Wire Line
+	5550 7900 5550 7600
+Wire Wire Line
+	5550 7600 5750 7600
+Wire Wire Line
+	6050 7600 6250 7600
+Wire Wire Line
+	6250 7600 6250 8000
+Wire Wire Line
+	6250 8000 6200 8000
+Connection ~ 5550 7600
+Wire Wire Line
+	5550 7100 5550 7150
+Connection ~ 5550 7150
+Wire Wire Line
+	5550 8450 5550 8500
+Connection ~ 5550 8500
+$Comp
+L Relay:FRT5_separated K4
+U 1 1 5FC61166
+P 7450 9400
+F 0 "K4" V 7731 9400 50  0000 C CNN
+F 1 "FRT5_separated" V 7640 9400 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 7650 9300 50  0001 L CNN
+F 3 "https://www.elpro.org/de/index.php?controller=attachment&id_attachment=8663" H 7450 9400 50  0001 C CNN
+	1    7450 9400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Relay:FRT5_separated K4
+U 2 1 5FC61170
+P 7450 8000
+F 0 "K4" V 7731 8000 50  0000 C CNN
+F 1 "FRT5_separated" V 7640 8000 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 7650 7900 50  0001 L CNN
+F 3 "https://www.elpro.org/de/index.php?controller=attachment&id_attachment=8663" H 7450 8000 50  0001 C CNN
+	2    7450 8000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R13
+U 1 1 5FC6117A
+P 7100 6950
+F 0 "R13" H 7170 6996 50  0000 L CNN
+F 1 "R" H 7170 6905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7030 6950 50  0001 C CNN
+F 3 "~" H 7100 6950 50  0001 C CNN
+	1    7100 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 5FC61184
+P 7100 8300
+F 0 "R14" H 7170 8346 50  0000 L CNN
+F 1 "R" H 7170 8255 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7030 8300 50  0001 C CNN
+F 3 "~" H 7100 8300 50  0001 C CNN
+	1    7100 8300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R15
+U 1 1 5FC6118E
+P 7450 6200
+F 0 "R15" V 7243 6200 50  0000 C CNN
+F 1 "R" V 7334 6200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7380 6200 50  0001 C CNN
+F 3 "~" H 7450 6200 50  0001 C CNN
+	1    7450 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R16
+U 1 1 5FC61198
+P 7450 7600
+F 0 "R16" V 7243 7600 50  0000 C CNN
+F 1 "R" V 7334 7600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7380 7600 50  0001 C CNN
+F 3 "~" H 7450 7600 50  0001 C CNN
+	1    7450 7600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7300 6200 7100 6200
+Wire Wire Line
+	7150 6500 7100 6500
+Wire Wire Line
+	7100 6500 7100 6200
+Connection ~ 7100 6200
+Wire Wire Line
+	7750 6600 7800 6600
+Wire Wire Line
+	7800 6600 7800 6200
+Wire Wire Line
+	7800 6200 7600 6200
+Wire Wire Line
+	7100 6800 7100 6700
+Wire Wire Line
+	7100 6700 7150 6700
+Wire Wire Line
+	7100 8150 7100 8100
+Wire Wire Line
+	7100 8100 7150 8100
+Wire Wire Line
+	7150 7900 7100 7900
+Wire Wire Line
+	7100 7900 7100 7600
+Wire Wire Line
+	7100 7600 7300 7600
+Wire Wire Line
+	7600 7600 7800 7600
+Wire Wire Line
+	7800 7600 7800 8000
+Wire Wire Line
+	7800 8000 7750 8000
+Connection ~ 7100 7600
+Wire Wire Line
+	7100 7100 7100 7150
+Connection ~ 7100 7150
+Wire Wire Line
+	7100 8450 7100 8500
+Connection ~ 7100 8500
+$Comp
+L Relay:FRT5_separated K5
+U 1 1 5FC7C92D
+P 9000 9400
+F 0 "K5" V 9281 9400 50  0000 C CNN
+F 1 "FRT5_separated" V 9190 9400 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 9200 9300 50  0001 L CNN
+F 3 "https://www.elpro.org/de/index.php?controller=attachment&id_attachment=8663" H 9000 9400 50  0001 C CNN
+	1    9000 9400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Relay:FRT5_separated K5
+U 2 1 5FC7D0F7
+P 9000 8000
+F 0 "K5" V 9281 8000 50  0000 C CNN
+F 1 "FRT5_separated" V 9190 8000 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 9200 7900 50  0001 L CNN
+F 3 "https://www.elpro.org/de/index.php?controller=attachment&id_attachment=8663" H 9000 8000 50  0001 C CNN
+	2    9000 8000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R17
+U 1 1 5FC7D101
+P 8650 6950
+F 0 "R17" H 8720 6996 50  0000 L CNN
+F 1 "R" H 8720 6905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8580 6950 50  0001 C CNN
+F 3 "~" H 8650 6950 50  0001 C CNN
+	1    8650 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R18
+U 1 1 5FC7D10B
+P 8650 8300
+F 0 "R18" H 8720 8346 50  0000 L CNN
+F 1 "R" H 8720 8255 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8580 8300 50  0001 C CNN
+F 3 "~" H 8650 8300 50  0001 C CNN
+	1    8650 8300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R19
+U 1 1 5FC7D115
+P 9000 6200
+F 0 "R19" V 8793 6200 50  0000 C CNN
+F 1 "R" V 8884 6200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8930 6200 50  0001 C CNN
+F 3 "~" H 9000 6200 50  0001 C CNN
+	1    9000 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R20
+U 1 1 5FC7D11F
+P 9000 7600
+F 0 "R20" V 8793 7600 50  0000 C CNN
+F 1 "R" V 8884 7600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8930 7600 50  0001 C CNN
+F 3 "~" H 9000 7600 50  0001 C CNN
+	1    9000 7600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8850 6200 8650 6200
+Wire Wire Line
+	8700 6500 8650 6500
+Wire Wire Line
+	8650 6500 8650 6200
+Connection ~ 8650 6200
+Wire Wire Line
+	9300 6600 9350 6600
+Wire Wire Line
+	9350 6600 9350 6200
+Wire Wire Line
+	9350 6200 9150 6200
+Wire Wire Line
+	8650 6800 8650 6700
+Wire Wire Line
+	8650 6700 8700 6700
+Wire Wire Line
+	8650 8150 8650 8100
+Wire Wire Line
+	8650 8100 8700 8100
+Wire Wire Line
+	8700 7900 8650 7900
+Wire Wire Line
+	8650 7900 8650 7600
+Wire Wire Line
+	8650 7600 8850 7600
+Wire Wire Line
+	9150 7600 9350 7600
+Wire Wire Line
+	9350 7600 9350 8000
+Wire Wire Line
+	9350 8000 9300 8000
+Connection ~ 8650 7600
+Wire Wire Line
+	8650 7100 8650 7150
+Connection ~ 8650 7150
+Wire Wire Line
+	8650 8450 8650 8500
+Connection ~ 8650 8500
+$Comp
+L Relay:FRT5_separated K6
+U 1 1 5FC7D149
+P 10550 9400
+F 0 "K6" V 10831 9400 50  0000 C CNN
+F 1 "FRT5_separated" V 10740 9400 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 10750 9300 50  0001 L CNN
+F 3 "https://www.elpro.org/de/index.php?controller=attachment&id_attachment=8663" H 10550 9400 50  0001 C CNN
+	1    10550 9400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Relay:FRT5_separated K6
+U 2 1 5FC7D153
+P 10550 8000
+F 0 "K6" V 10831 8000 50  0000 C CNN
+F 1 "FRT5_separated" V 10740 8000 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 10750 7900 50  0001 L CNN
+F 3 "https://www.elpro.org/de/index.php?controller=attachment&id_attachment=8663" H 10550 8000 50  0001 C CNN
+	2    10550 8000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R21
+U 1 1 5FC7D15D
+P 10200 6950
+F 0 "R21" H 10270 6996 50  0000 L CNN
+F 1 "R" H 10270 6905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 10130 6950 50  0001 C CNN
+F 3 "~" H 10200 6950 50  0001 C CNN
+	1    10200 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R22
+U 1 1 5FC7D167
+P 10200 8300
+F 0 "R22" H 10270 8346 50  0000 L CNN
+F 1 "R" H 10270 8255 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 10130 8300 50  0001 C CNN
+F 3 "~" H 10200 8300 50  0001 C CNN
+	1    10200 8300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R23
+U 1 1 5FC7D171
+P 10550 6200
+F 0 "R23" V 10343 6200 50  0000 C CNN
+F 1 "R" V 10434 6200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 10480 6200 50  0001 C CNN
+F 3 "~" H 10550 6200 50  0001 C CNN
+	1    10550 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R24
+U 1 1 5FC7D17B
+P 10550 7600
+F 0 "R24" V 10343 7600 50  0000 C CNN
+F 1 "R" V 10434 7600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 10480 7600 50  0001 C CNN
+F 3 "~" H 10550 7600 50  0001 C CNN
+	1    10550 7600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10400 6200 10200 6200
+Wire Wire Line
+	10250 6500 10200 6500
+Wire Wire Line
+	10200 6500 10200 6200
+Connection ~ 10200 6200
+Wire Wire Line
+	10850 6600 10900 6600
+Wire Wire Line
+	10900 6600 10900 6200
+Wire Wire Line
+	10900 6200 10700 6200
+Wire Wire Line
+	10200 6800 10200 6700
+Wire Wire Line
+	10200 6700 10250 6700
+Wire Wire Line
+	10200 8150 10200 8100
+Wire Wire Line
+	10200 8100 10250 8100
+Wire Wire Line
+	10250 7900 10200 7900
+Wire Wire Line
+	10200 7900 10200 7600
+Wire Wire Line
+	10200 7600 10400 7600
+Wire Wire Line
+	10700 7600 10900 7600
+Wire Wire Line
+	10900 7600 10900 8000
+Wire Wire Line
+	10900 8000 10850 8000
+Connection ~ 10200 7600
+Wire Wire Line
+	10200 7100 10200 7150
+Connection ~ 10200 7150
+Wire Wire Line
+	10200 8450 10200 8500
+Connection ~ 10200 8500
+$Comp
+L Relay:FRT5_separated K7
+U 2 1 5FC7D1A5
+P 12100 8000
+F 0 "K7" V 12381 8000 50  0000 C CNN
+F 1 "FRT5_separated" V 12290 8000 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 12300 7900 50  0001 L CNN
+F 3 "https://www.elpro.org/de/index.php?controller=attachment&id_attachment=8663" H 12100 8000 50  0001 C CNN
+	2    12100 8000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Relay:FRT5_separated K7
+U 3 1 5FC7D1AF
+P 12100 6600
+F 0 "K7" V 12381 6600 50  0000 C CNN
+F 1 "FRT5_separated" V 12290 6600 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 12300 6500 50  0001 L CNN
+F 3 "https://www.elpro.org/de/index.php?controller=attachment&id_attachment=8663" H 12100 6600 50  0001 C CNN
+	3    12100 6600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R33
+U 1 1 5FC7D1B9
+P 11750 6950
+F 0 "R33" H 11820 6996 50  0000 L CNN
+F 1 "R" H 11820 6905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 11680 6950 50  0001 C CNN
+F 3 "~" H 11750 6950 50  0001 C CNN
+	1    11750 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R34
+U 1 1 5FC7D1C3
+P 11750 8300
+F 0 "R34" H 11820 8346 50  0000 L CNN
+F 1 "R" H 11820 8255 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 11680 8300 50  0001 C CNN
+F 3 "~" H 11750 8300 50  0001 C CNN
+	1    11750 8300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R35
+U 1 1 5FC7D1CD
+P 12100 6200
+F 0 "R35" V 11893 6200 50  0000 C CNN
+F 1 "R" V 11984 6200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 12030 6200 50  0001 C CNN
+F 3 "~" H 12100 6200 50  0001 C CNN
+	1    12100 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R36
+U 1 1 5FC7D1D7
+P 12100 7600
+F 0 "R36" V 11893 7600 50  0000 C CNN
+F 1 "R" V 11984 7600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 12030 7600 50  0001 C CNN
+F 3 "~" H 12100 7600 50  0001 C CNN
+	1    12100 7600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11950 6200 11750 6200
+Wire Wire Line
+	11800 6500 11750 6500
+Wire Wire Line
+	11750 6500 11750 6200
+Connection ~ 11750 6200
+Wire Wire Line
+	12400 6600 12450 6600
+Wire Wire Line
+	12450 6600 12450 6200
+Wire Wire Line
+	12450 6200 12250 6200
+Wire Wire Line
+	11750 6800 11750 6700
+Wire Wire Line
+	11750 6700 11800 6700
+Wire Wire Line
+	11750 8150 11750 8100
+Wire Wire Line
+	11750 8100 11800 8100
+Wire Wire Line
+	11800 7900 11750 7900
+Wire Wire Line
+	11750 7900 11750 7600
+Wire Wire Line
+	11750 7600 11950 7600
+Wire Wire Line
+	12250 7600 12450 7600
+Wire Wire Line
+	12450 7600 12450 8000
+Wire Wire Line
+	12450 8000 12400 8000
+Connection ~ 11750 7600
+Wire Wire Line
+	11750 7100 11750 7150
+Connection ~ 11750 7150
+Wire Wire Line
+	11750 8450 11750 8500
+Connection ~ 11750 8500
+$Comp
+L Relay:FRT5_separated K8
+U 2 1 5FC7D201
+P 13650 8000
+F 0 "K8" V 13931 8000 50  0000 C CNN
+F 1 "FRT5_separated" V 13840 8000 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 13850 7900 50  0001 L CNN
+F 3 "https://www.elpro.org/de/index.php?controller=attachment&id_attachment=8663" H 13650 8000 50  0001 C CNN
+	2    13650 8000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Relay:FRT5_separated K8
+U 3 1 5FC7D20B
+P 13650 6600
+F 0 "K8" V 13931 6600 50  0000 C CNN
+F 1 "FRT5_separated" V 13840 6600 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 13850 6500 50  0001 L CNN
+F 3 "https://www.elpro.org/de/index.php?controller=attachment&id_attachment=8663" H 13650 6600 50  0001 C CNN
+	3    13650 6600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R37
+U 1 1 5FC7D215
+P 13300 6950
+F 0 "R37" H 13370 6996 50  0000 L CNN
+F 1 "R" H 13370 6905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 13230 6950 50  0001 C CNN
+F 3 "~" H 13300 6950 50  0001 C CNN
+	1    13300 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R38
+U 1 1 5FC7D21F
+P 13300 8300
+F 0 "R38" H 13370 8346 50  0000 L CNN
+F 1 "R" H 13370 8255 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 13230 8300 50  0001 C CNN
+F 3 "~" H 13300 8300 50  0001 C CNN
+	1    13300 8300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R39
+U 1 1 5FC7D229
+P 13650 6200
+F 0 "R39" V 13443 6200 50  0000 C CNN
+F 1 "R" V 13534 6200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 13580 6200 50  0001 C CNN
+F 3 "~" H 13650 6200 50  0001 C CNN
+	1    13650 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R40
+U 1 1 5FC7D233
+P 13650 7600
+F 0 "R40" V 13443 7600 50  0000 C CNN
+F 1 "R" V 13534 7600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 13580 7600 50  0001 C CNN
+F 3 "~" H 13650 7600 50  0001 C CNN
+	1    13650 7600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13500 6200 13300 6200
+Wire Wire Line
+	13350 6500 13300 6500
+Wire Wire Line
+	13300 6500 13300 6200
+Connection ~ 13300 6200
+Wire Wire Line
+	13950 6600 14000 6600
+Wire Wire Line
+	14000 6600 14000 6200
+Wire Wire Line
+	14000 6200 13800 6200
+Wire Wire Line
+	13300 6800 13300 6700
+Wire Wire Line
+	13300 6700 13350 6700
+Wire Wire Line
+	13300 8150 13300 8100
+Wire Wire Line
+	13300 8100 13350 8100
+Wire Wire Line
+	13350 7900 13300 7900
+Wire Wire Line
+	13300 7900 13300 7600
+Wire Wire Line
+	13300 7600 13500 7600
+Wire Wire Line
+	13800 7600 14000 7600
+Wire Wire Line
+	14000 7600 14000 8000
+Wire Wire Line
+	14000 8000 13950 8000
+Connection ~ 13300 7600
+Wire Wire Line
+	13300 7100 13300 7150
+Connection ~ 13300 7150
+Wire Wire Line
+	13300 8450 13300 8500
+Connection ~ 13300 8500
+Wire Wire Line
+	2450 8500 4000 8500
+Wire Wire Line
+	3150 7600 4000 7600
+Connection ~ 3150 7600
+Wire Wire Line
+	2450 7150 4000 7150
+Wire Wire Line
+	3150 6200 4000 6200
+Connection ~ 3150 6200
+Wire Wire Line
+	4700 6200 5550 6200
+Connection ~ 4700 6200
+Wire Wire Line
+	4000 7150 5550 7150
+Wire Wire Line
+	4700 7600 5550 7600
+Connection ~ 4700 7600
+Wire Wire Line
+	4000 8500 5550 8500
+Wire Wire Line
+	6250 6200 7100 6200
+Connection ~ 6250 6200
+Wire Wire Line
+	5550 7150 7100 7150
+Wire Wire Line
+	6250 7600 7100 7600
+Connection ~ 6250 7600
+Wire Wire Line
+	5550 8500 7100 8500
+Wire Wire Line
+	7800 6200 8650 6200
+Connection ~ 7800 6200
+Wire Wire Line
+	7100 7150 8650 7150
+Wire Wire Line
+	7800 7600 8650 7600
+Connection ~ 7800 7600
+Wire Wire Line
+	7100 8500 8650 8500
+Wire Wire Line
+	9350 6200 10200 6200
+Connection ~ 9350 6200
+Wire Wire Line
+	8650 7150 10200 7150
+Wire Wire Line
+	9350 7600 10200 7600
+Connection ~ 9350 7600
+Wire Wire Line
+	8650 8500 10200 8500
+Wire Wire Line
+	10900 6200 11750 6200
+Connection ~ 10900 6200
+Wire Wire Line
+	10200 7150 11750 7150
+Wire Wire Line
+	10900 7600 11750 7600
+Connection ~ 10900 7600
+Wire Wire Line
+	10200 8500 11750 8500
+Wire Wire Line
+	12450 6200 13300 6200
+Connection ~ 12450 6200
+Wire Wire Line
+	11750 7150 13300 7150
+Wire Wire Line
+	12450 7600 13300 7600
+Connection ~ 12450 7600
+Wire Wire Line
+	11750 8500 13300 8500
+$Comp
+L Device:R R41
+U 1 1 6007FD8E
+P 14400 6600
+F 0 "R41" H 14330 6554 50  0000 R CNN
+F 1 "R" H 14330 6645 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 14330 6600 50  0001 C CNN
+F 3 "~" H 14400 6600 50  0001 C CNN
+	1    14400 6600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R42
+U 1 1 6008035C
+P 14400 8000
+F 0 "R42" H 14330 7954 50  0000 R CNN
+F 1 "R" H 14330 8045 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 14330 8000 50  0001 C CNN
+F 3 "~" H 14400 8000 50  0001 C CNN
+	1    14400 8000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	14400 6200 14000 6200
+Connection ~ 14000 6200
+Wire Wire Line
+	14400 6200 14400 6450
+Wire Wire Line
+	14400 7150 14400 6750
+Wire Wire Line
+	13300 7150 14400 7150
+Wire Wire Line
+	14400 7850 14400 7600
+Wire Wire Line
+	14400 7600 14000 7600
+Connection ~ 14000 7600
+Wire Wire Line
+	14400 8150 14400 8500
+Wire Wire Line
+	13300 8500 14400 8500
+Connection ~ 14400 6200
+Text Label 14800 6200 0    50   ~ 0
+OUT_L
+Connection ~ 14400 7600
+Text Label 14800 7600 0    50   ~ 0
+OUT_R
+Connection ~ 14400 8500
+Connection ~ 14400 7150
+$Comp
+L Relay:FRT5_separated K2
+U 3 1 601B9220
+P 4350 6600
+F 0 "K2" V 4642 6600 50  0000 C CNN
+F 1 "FRT5_separated" V 4551 6600 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 4550 6500 50  0001 L CNN
+F 3 "https://www.elpro.org/de/index.php?controller=attachment&id_attachment=8663" H 4350 6600 50  0001 C CNN
+	3    4350 6600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Relay:FRT5_separated K3
+U 3 1 601B9CC8
+P 5900 6600
+F 0 "K3" V 6192 6600 50  0000 C CNN
+F 1 "FRT5_separated" V 6101 6600 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 6100 6500 50  0001 L CNN
+F 3 "https://www.elpro.org/de/index.php?controller=attachment&id_attachment=8663" H 5900 6600 50  0001 C CNN
+	3    5900 6600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Relay:FRT5_separated K4
+U 3 1 601BAC3B
+P 7450 6600
+F 0 "K4" V 7742 6600 50  0000 C CNN
+F 1 "FRT5_separated" V 7651 6600 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 7650 6500 50  0001 L CNN
+F 3 "https://www.elpro.org/de/index.php?controller=attachment&id_attachment=8663" H 7450 6600 50  0001 C CNN
+	3    7450 6600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Relay:FRT5_separated K5
+U 3 1 601BB603
+P 9000 6600
+F 0 "K5" V 9292 6600 50  0000 C CNN
+F 1 "FRT5_separated" V 9201 6600 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 9200 6500 50  0001 L CNN
+F 3 "https://www.elpro.org/de/index.php?controller=attachment&id_attachment=8663" H 9000 6600 50  0001 C CNN
+	3    9000 6600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Relay:FRT5_separated K6
+U 3 1 601BBF13
+P 10550 6600
+F 0 "K6" V 10842 6600 50  0000 C CNN
+F 1 "FRT5_separated" V 10751 6600 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 10750 6500 50  0001 L CNN
+F 3 "https://www.elpro.org/de/index.php?controller=attachment&id_attachment=8663" H 10550 6600 50  0001 C CNN
+	3    10550 6600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Relay:FRT5_separated K7
+U 1 1 601BC740
+P 12050 9400
+F 0 "K7" V 12342 9400 50  0000 C CNN
+F 1 "FRT5_separated" V 12251 9400 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 12250 9300 50  0001 L CNN
+F 3 "https://www.elpro.org/de/index.php?controller=attachment&id_attachment=8663" H 12050 9400 50  0001 C CNN
+	1    12050 9400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Relay:FRT5_separated K8
+U 1 1 601BD209
+P 13600 9400
+F 0 "K8" V 13892 9400 50  0000 C CNN
+F 1 "FRT5_separated" V 13801 9400 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 13800 9300 50  0001 L CNN
+F 3 "https://www.elpro.org/de/index.php?controller=attachment&id_attachment=8663" H 13600 9400 50  0001 C CNN
+	1    13600 9400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_Array:ULN2803A U1
+U 1 1 601D0B25
+P 13650 2000
+F 0 "U1" V 13696 2429 50  0000 L CNN
+F 1 "ULN2803A" V 13605 2429 50  0000 L CNN
+F 2 "Package_DIP:DIP-18_W7.62mm" H 13700 1350 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/uln2803a.pdf" H 13750 1800 50  0001 C CNN
+	1    13650 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 601E8412
+P 850 850
+F 0 "#FLG01" H 850 925 50  0001 C CNN
+F 1 "PWR_FLAG" H 850 1023 50  0000 C CNN
+F 2 "" H 850 850 50  0001 C CNN
+F 3 "~" H 850 850 50  0001 C CNN
+	1    850  850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR02
+U 1 1 601F1DC3
+P 1500 1000
+F 0 "#PWR02" H 1500 850 50  0001 C CNN
+F 1 "+12V" H 1515 1173 50  0000 C CNN
+F 2 "" H 1500 1000 50  0001 C CNN
+F 3 "" H 1500 1000 50  0001 C CNN
+	1    1500 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 601F297E
+P 850 1050
+F 0 "#PWR01" H 850 800 50  0001 C CNN
+F 1 "GND" H 855 877 50  0000 C CNN
+F 2 "" H 850 1050 50  0001 C CNN
+F 3 "" H 850 1050 50  0001 C CNN
+	1    850  1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR03
+U 1 1 6022045E
+P 1700 9050
+F 0 "#PWR03" H 1700 8900 50  0001 C CNN
+F 1 "+12V" H 1715 9223 50  0000 C CNN
+F 2 "" H 1700 9050 50  0001 C CNN
+F 3 "" H 1700 9050 50  0001 C CNN
+	1    1700 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13300 9050 13300 9400
+Wire Wire Line
+	11750 9400 11750 9050
+Connection ~ 11750 9050
+Wire Wire Line
+	11750 9050 13300 9050
+Wire Wire Line
+	10250 9400 10250 9050
+Wire Wire Line
+	1700 9050 2500 9050
+Connection ~ 10250 9050
+Wire Wire Line
+	10250 9050 11750 9050
+Wire Wire Line
+	8700 9400 8700 9050
+Connection ~ 8700 9050
+Wire Wire Line
+	8700 9050 10250 9050
+Wire Wire Line
+	7150 9400 7150 9050
+Connection ~ 7150 9050
+Wire Wire Line
+	7150 9050 8700 9050
+Wire Wire Line
+	5600 9400 5600 9050
+Connection ~ 5600 9050
+Wire Wire Line
+	5600 9050 7150 9050
+Wire Wire Line
+	4050 9400 4050 9050
+Connection ~ 4050 9050
+Wire Wire Line
+	4050 9050 5600 9050
+Wire Wire Line
+	2500 9400 2500 9050
+Connection ~ 2500 9050
+Wire Wire Line
+	2500 9050 4050 9050
+Wire Wire Line
+	3100 9400 3500 9400
+Wire Wire Line
+	4650 9400 5100 9400
+Wire Wire Line
+	6200 9400 6650 9400
+Wire Wire Line
+	7750 9400 8200 9400
+Wire Wire Line
+	9300 9400 9800 9400
+Wire Wire Line
+	10850 9400 11400 9400
+Wire Wire Line
+	12350 9400 12900 9400
+Wire Wire Line
+	13900 9400 14600 9400
+Text Label 14100 9400 0    50   ~ 0
+REL_8
+Text Label 12500 9400 0    50   ~ 0
+REL_7
+Text Label 11000 9400 0    50   ~ 0
+REL_6
+Text Label 9400 9400 0    50   ~ 0
+REL_5
+Text Label 7850 9400 0    50   ~ 0
+REL_4
+Text Label 6300 9400 0    50   ~ 0
+REL_3
+Text Label 4800 9400 0    50   ~ 0
+REL_2
+Text Label 3250 9400 0    50   ~ 0
+REL_1
+$Comp
+L Connector_Generic:Conn_01x10 J4
+U 1 1 602CC7BD
+P 12500 2200
+F 0 "J4" H 12580 2192 50  0000 L CNN
+F 1 "INPUT" H 12580 2101 50  0000 L CNN
+F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical" H 12500 2200 50  0001 C CNN
+F 3 "~" H 12500 2200 50  0001 C CNN
+	1    12500 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12300 1800 13250 1800
+Wire Wire Line
+	13250 1900 12300 1900
+Wire Wire Line
+	12300 2000 13250 2000
+Wire Wire Line
+	13250 2100 12300 2100
+Wire Wire Line
+	12300 2200 13250 2200
+Wire Wire Line
+	13250 2300 12300 2300
+Wire Wire Line
+	12300 2400 13250 2400
+Wire Wire Line
+	13250 2500 12300 2500
+$Comp
+L power:GND #PWR07
+U 1 1 60331253
+P 12200 2800
+F 0 "#PWR07" H 12200 2550 50  0001 C CNN
+F 1 "GND" H 12205 2627 50  0000 C CNN
+F 2 "" H 12200 2800 50  0001 C CNN
+F 3 "" H 12200 2800 50  0001 C CNN
+	1    12200 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12200 2800 12200 2700
+Wire Wire Line
+	12200 2700 12200 2600
+Wire Wire Line
+	12200 2600 12300 2600
+Connection ~ 12200 2700
+$Comp
+L power:GND #PWR08
+U 1 1 6034BA02
+P 13650 2800
+F 0 "#PWR08" H 13650 2550 50  0001 C CNN
+F 1 "GND" H 13655 2627 50  0000 C CNN
+F 2 "" H 13650 2800 50  0001 C CNN
+F 3 "" H 13650 2800 50  0001 C CNN
+	1    13650 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13650 2800 13650 2700
+$Comp
+L power:+12V #PWR09
+U 1 1 60359555
+P 14200 1350
+F 0 "#PWR09" H 14200 1200 50  0001 C CNN
+F 1 "+12V" H 14215 1523 50  0000 C CNN
+F 2 "" H 14200 1350 50  0001 C CNN
+F 3 "" H 14200 1350 50  0001 C CNN
+	1    14200 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14200 1700 14200 1350
+Wire Wire Line
+	14050 1700 14200 1700
+Wire Wire Line
+	14050 1800 14550 1800
+Wire Wire Line
+	14050 1900 14550 1900
+Wire Wire Line
+	14050 2000 14550 2000
+Wire Wire Line
+	14050 2100 14550 2100
+Wire Wire Line
+	14050 2200 14550 2200
+Wire Wire Line
+	14050 2300 14550 2300
+Wire Wire Line
+	14050 2400 14550 2400
+Wire Wire Line
+	14050 2500 14550 2500
+Text Label 14200 1800 0    50   ~ 0
+REL_1
+Text Label 14200 1900 0    50   ~ 0
+REL_2
+Text Label 14200 2000 0    50   ~ 0
+REL_3
+Text Label 14200 2100 0    50   ~ 0
+REL_4
+Text Label 14200 2200 0    50   ~ 0
+REL_5
+Text Label 14200 2300 0    50   ~ 0
+REL_6
+Text Label 14200 2400 0    50   ~ 0
+REL_7
+Text Label 14200 2500 0    50   ~ 0
+REL_8
+Wire Wire Line
+	12200 2700 12300 2700
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 603FD189
+P 1300 850
+F 0 "#FLG02" H 1300 925 50  0001 C CNN
+F 1 "PWR_FLAG" H 1300 1023 50  0000 C CNN
+F 2 "" H 1300 850 50  0001 C CNN
+F 3 "~" H 1300 850 50  0001 C CNN
+	1    1300 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  1050 850  850 
+Wire Wire Line
+	1500 1000 1300 1000
+Wire Wire Line
+	1300 1000 1300 850 
+$Comp
+L Device:LED D1
+U 1 1 60441CD0
+P 11800 1800
+F 0 "D1" H 11793 2017 50  0000 C CNN
+F 1 "LED" H 11793 1926 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 11800 1800 50  0001 C CNN
+F 3 "~" H 11800 1800 50  0001 C CNN
+	1    11800 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 604423D2
+P 11800 1900
+F 0 "D2" H 11793 2117 50  0000 C CNN
+F 1 "LED" H 11793 2026 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 11800 1900 50  0001 C CNN
+F 3 "~" H 11800 1900 50  0001 C CNN
+	1    11800 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 60442657
+P 11800 2000
+F 0 "D3" H 11793 2217 50  0000 C CNN
+F 1 "LED" H 11793 2126 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 11800 2000 50  0001 C CNN
+F 3 "~" H 11800 2000 50  0001 C CNN
+	1    11800 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 604428C4
+P 11800 2100
+F 0 "D4" H 11793 2317 50  0000 C CNN
+F 1 "LED" H 11793 2226 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 11800 2100 50  0001 C CNN
+F 3 "~" H 11800 2100 50  0001 C CNN
+	1    11800 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D5
+U 1 1 60442BF2
+P 11800 2200
+F 0 "D5" H 11793 2417 50  0000 C CNN
+F 1 "LED" H 11793 2326 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 11800 2200 50  0001 C CNN
+F 3 "~" H 11800 2200 50  0001 C CNN
+	1    11800 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D6
+U 1 1 60442E77
+P 11800 2300
+F 0 "D6" H 11793 2517 50  0000 C CNN
+F 1 "LED" H 11793 2426 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 11800 2300 50  0001 C CNN
+F 3 "~" H 11800 2300 50  0001 C CNN
+	1    11800 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D7
+U 1 1 60443E3D
+P 11800 2400
+F 0 "D7" H 11793 2617 50  0000 C CNN
+F 1 "LED" H 11793 2526 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 11800 2400 50  0001 C CNN
+F 3 "~" H 11800 2400 50  0001 C CNN
+	1    11800 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D8
+U 1 1 6044408D
+P 11800 2500
+F 0 "D8" H 11793 2717 50  0000 C CNN
+F 1 "LED" H 11793 2626 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 11800 2500 50  0001 C CNN
+F 3 "~" H 11800 2500 50  0001 C CNN
+	1    11800 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R25
+U 1 1 6044441B
+P 11350 1800
+F 0 "R25" V 11143 1800 50  0000 C CNN
+F 1 "R" V 11234 1800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 11280 1800 50  0001 C CNN
+F 3 "~" H 11350 1800 50  0001 C CNN
+	1    11350 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R26
+U 1 1 6044525F
+P 11350 1900
+F 0 "R26" V 11143 1900 50  0000 C CNN
+F 1 "R" V 11234 1900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 11280 1900 50  0001 C CNN
+F 3 "~" H 11350 1900 50  0001 C CNN
+	1    11350 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R27
+U 1 1 6044546E
+P 11350 2000
+F 0 "R27" V 11143 2000 50  0000 C CNN
+F 1 "R" V 11234 2000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 11280 2000 50  0001 C CNN
+F 3 "~" H 11350 2000 50  0001 C CNN
+	1    11350 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R28
+U 1 1 604456FA
+P 11350 2100
+F 0 "R28" V 11143 2100 50  0000 C CNN
+F 1 "R" V 11234 2100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 11280 2100 50  0001 C CNN
+F 3 "~" H 11350 2100 50  0001 C CNN
+	1    11350 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R29
+U 1 1 604458EE
+P 11350 2200
+F 0 "R29" V 11143 2200 50  0000 C CNN
+F 1 "R" V 11234 2200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 11280 2200 50  0001 C CNN
+F 3 "~" H 11350 2200 50  0001 C CNN
+	1    11350 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R30
+U 1 1 60445AD8
+P 11350 2300
+F 0 "R30" V 11143 2300 50  0000 C CNN
+F 1 "R" V 11234 2300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 11280 2300 50  0001 C CNN
+F 3 "~" H 11350 2300 50  0001 C CNN
+	1    11350 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R31
+U 1 1 60445D56
+P 11350 2400
+F 0 "R31" V 11143 2400 50  0000 C CNN
+F 1 "R" V 11234 2400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 11280 2400 50  0001 C CNN
+F 3 "~" H 11350 2400 50  0001 C CNN
+	1    11350 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R32
+U 1 1 60445F01
+P 11350 2500
+F 0 "R32" V 11143 2500 50  0000 C CNN
+F 1 "R" V 11234 2500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 11280 2500 50  0001 C CNN
+F 3 "~" H 11350 2500 50  0001 C CNN
+	1    11350 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11500 1800 11650 1800
+Wire Wire Line
+	11500 1900 11650 1900
+Wire Wire Line
+	11650 2000 11500 2000
+Wire Wire Line
+	11500 2100 11650 2100
+Wire Wire Line
+	11650 2200 11500 2200
+Wire Wire Line
+	11500 2300 11650 2300
+Wire Wire Line
+	11650 2400 11500 2400
+Wire Wire Line
+	11500 2500 11650 2500
+Wire Wire Line
+	11950 2500 12300 2500
+Connection ~ 12300 2500
+Wire Wire Line
+	12300 2400 11950 2400
+Connection ~ 12300 2400
+Wire Wire Line
+	11950 2300 12300 2300
+Connection ~ 12300 2300
+Wire Wire Line
+	12300 2200 11950 2200
+Connection ~ 12300 2200
+Wire Wire Line
+	11950 2100 12300 2100
+Connection ~ 12300 2100
+Wire Wire Line
+	12300 2000 11950 2000
+Connection ~ 12300 2000
+Wire Wire Line
+	11950 1900 12300 1900
+Connection ~ 12300 1900
+Wire Wire Line
+	12300 1800 11950 1800
+Connection ~ 12300 1800
+Wire Wire Line
+	11200 1800 11050 1800
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 605547EA
+P 11250 2700
+F 0 "J3" H 11330 2692 50  0000 L CNN
+F 1 "LED" H 11330 2601 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 11250 2700 50  0001 C CNN
+F 3 "~" H 11250 2700 50  0001 C CNN
+	1    11250 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 60555BB9
+P 11050 2900
+F 0 "#PWR06" H 11050 2650 50  0001 C CNN
+F 1 "GND" H 11055 2727 50  0000 C CNN
+F 2 "" H 11050 2900 50  0001 C CNN
+F 3 "" H 11050 2900 50  0001 C CNN
+	1    11050 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11050 2900 11050 2800
+Wire Wire Line
+	11050 1800 11050 1900
+Wire Wire Line
+	11200 1900 11050 1900
+Connection ~ 11050 1900
+Wire Wire Line
+	11050 1900 11050 2000
+Wire Wire Line
+	11050 2000 11200 2000
+Connection ~ 11050 2000
+Wire Wire Line
+	11050 2000 11050 2100
+Wire Wire Line
+	11200 2100 11050 2100
+Connection ~ 11050 2100
+Wire Wire Line
+	11050 2100 11050 2200
+Wire Wire Line
+	11050 2200 11200 2200
+Connection ~ 11050 2200
+Wire Wire Line
+	11050 2200 11050 2300
+Wire Wire Line
+	11200 2300 11050 2300
+Connection ~ 11050 2300
+Wire Wire Line
+	11050 2300 11050 2400
+Wire Wire Line
+	11050 2400 11200 2400
+Connection ~ 11050 2400
+Wire Wire Line
+	11050 2400 11050 2500
+Wire Wire Line
+	11200 2500 11050 2500
+Connection ~ 11050 2500
+Wire Wire Line
+	11050 2500 11050 2700
+$Comp
+L Connector:Screw_Terminal_01x03 J1
+U 1 1 6060C254
+P 1300 5800
+F 0 "J1" V 1264 5612 50  0000 R CNN
+F 1 "AUDIO_IN" V 1173 5612 50  0000 R CNN
+F 2 "TerminalBlock_RND:TerminalBlock_RND_205-00013_1x03_P5.00mm_Horizontal" H 1300 5800 50  0001 C CNN
+F 3 "~" H 1300 5800 50  0001 C CNN
+	1    1300 5800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x03 J5
+U 1 1 60612102
+P 15550 5850
+F 0 "J5" V 15514 5662 50  0000 R CNN
+F 1 "AUDIO_OUT" V 15423 5662 50  0000 R CNN
+F 2 "TerminalBlock_RND:TerminalBlock_RND_205-00013_1x03_P5.00mm_Horizontal" H 15550 5850 50  0001 C CNN
+F 3 "~" H 15550 5850 50  0001 C CNN
+	1    15550 5850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1200 6200 1200 6000
+Wire Wire Line
+	1200 6200 2450 6200
+Wire Wire Line
+	1300 7600 1300 6000
+Wire Wire Line
+	1300 7600 2450 7600
+Wire Wire Line
+	1400 7150 1400 6000
+Wire Wire Line
+	1400 7150 2450 7150
+Wire Wire Line
+	1400 7150 1400 8500
+Wire Wire Line
+	1400 8500 2450 8500
+Connection ~ 1400 7150
+Wire Wire Line
+	15450 6200 15450 6050
+Wire Wire Line
+	14400 6200 15450 6200
+Wire Wire Line
+	15650 7150 15650 6050
+Wire Wire Line
+	15550 7600 15550 6050
+Wire Wire Line
+	14400 7600 15550 7600
+Wire Wire Line
+	14400 7150 15650 7150
+Wire Wire Line
+	15650 8500 15650 7150
+Wire Wire Line
+	14400 8500 15650 8500
+Connection ~ 15650 7150
+$Comp
+L Connector:Screw_Terminal_01x02 J2
+U 1 1 606CD2A9
+P 2300 750
+F 0 "J2" H 2380 742 50  0000 L CNN
+F 1 "POWER" H 2380 651 50  0000 L CNN
+F 2 "TerminalBlock_RND:TerminalBlock_RND_205-00012_1x02_P5.00mm_Horizontal" H 2300 750 50  0001 C CNN
+F 3 "~" H 2300 750 50  0001 C CNN
+	1    2300 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0101
+U 1 1 607978FF
+P 1950 750
+F 0 "#PWR0101" H 1950 600 50  0001 C CNN
+F 1 "+12V" H 1965 923 50  0000 C CNN
+F 2 "" H 1950 750 50  0001 C CNN
+F 3 "" H 1950 750 50  0001 C CNN
+	1    1950 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 60797B2C
+P 1950 850
+F 0 "#PWR0102" H 1950 600 50  0001 C CNN
+F 1 "GND" H 1955 677 50  0000 C CNN
+F 2 "" H 1950 850 50  0001 C CNN
+F 3 "" H 1950 850 50  0001 C CNN
+	1    1950 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 850  2100 850 
+Wire Wire Line
+	2100 750  1950 750 
+$Comp
+L Device:C C1
+U 1 1 607C1A61
+P 2700 800
+F 0 "C1" H 2815 846 50  0000 L CNN
+F 1 "C" H 2815 755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 2738 650 50  0001 C CNN
+F 3 "~" H 2700 800 50  0001 C CNN
+	1    2700 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C2
+U 1 1 607C2855
+P 3050 800
+F 0 "C2" H 3168 846 50  0000 L CNN
+F 1 "CP" H 3168 755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 3088 650 50  0001 C CNN
+F 3 "~" H 3050 800 50  0001 C CNN
+	1    3050 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 650  2700 650 
+Wire Wire Line
+	2700 650  2100 650 
+Wire Wire Line
+	2100 650  2100 750 
+Connection ~ 2700 650 
+Connection ~ 2100 750 
+Wire Wire Line
+	3050 950  2700 950 
+Wire Wire Line
+	2700 950  2100 950 
+Wire Wire Line
+	2100 950  2100 850 
+Connection ~ 2700 950 
+Connection ~ 2100 850 
+Text Notes 5950 5450 0    50   ~ 0
+Rezystory:\nR1 (górne): 562, 1k, 2k, 3.83k, 5.6k, 8.25k, 10k, 10k\nR2 (dolne - do masy): 169k, 82k, 39k, 18k, 5.6k, 1.82k, 243, 6.8\nKońcowe: 10k
+$EndSCHEMATC

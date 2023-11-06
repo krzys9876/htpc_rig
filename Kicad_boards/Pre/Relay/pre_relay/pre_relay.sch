@@ -1,0 +1,1896 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Relay:AZ850-x K2
+U 1 1 5F8601DA
+P 2750 2850
+F 0 "K2" V 1983 2850 50  0000 C CNN
+F 1 "AZ850-x" V 2074 2850 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 3300 2900 50  0001 C CNN
+F 3 "http://www.azettler.com/pdfs/az850.pdf" H 2750 2850 50  0001 C CNN
+	1    2750 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x03 J1
+U 1 1 5F86139D
+P 2300 1700
+F 0 "J1" V 2264 1512 50  0000 R CNN
+F 1 "INPUT1" V 2173 1512 50  0000 R CNN
+F 2 "TerminalBlock_RND:TerminalBlock_RND_205-00002_1x03_P5.00mm_Horizontal" H 2300 1700 50  0001 C CNN
+F 3 "~" H 2300 1700 50  0001 C CNN
+	1    2300 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Relay:AZ850-x K1
+U 1 1 5F86224A
+P 1850 2850
+F 0 "K1" V 1083 2850 50  0000 C CNN
+F 1 "AZ850-x" V 1174 2850 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 2400 2900 50  0001 C CNN
+F 3 "http://www.azettler.com/pdfs/az850.pdf" H 1850 2850 50  0001 C CNN
+	1    1850 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L Relay:AZ850-x K4
+U 1 1 5F869A7F
+P 4950 2850
+F 0 "K4" V 4183 2850 50  0000 C CNN
+F 1 "AZ850-x" V 4274 2850 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 5500 2900 50  0001 C CNN
+F 3 "http://www.azettler.com/pdfs/az850.pdf" H 4950 2850 50  0001 C CNN
+	1    4950 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x03 J2
+U 1 1 5F869B99
+P 4500 1700
+F 0 "J2" V 4464 1512 50  0000 R CNN
+F 1 "INPUT2" V 4373 1512 50  0000 R CNN
+F 2 "TerminalBlock_RND:TerminalBlock_RND_205-00002_1x03_P5.00mm_Horizontal" H 4500 1700 50  0001 C CNN
+F 3 "~" H 4500 1700 50  0001 C CNN
+	1    4500 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Relay:AZ850-x K3
+U 1 1 5F869BA3
+P 4050 2850
+F 0 "K3" V 3283 2850 50  0000 C CNN
+F 1 "AZ850-x" V 3374 2850 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 4600 2900 50  0001 C CNN
+F 3 "http://www.azettler.com/pdfs/az850.pdf" H 4050 2850 50  0001 C CNN
+	1    4050 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1550 2850 1350 2850
+Wire Wire Line
+	1350 2850 1350 2050
+Wire Wire Line
+	1350 2050 2200 2050
+Wire Wire Line
+	2200 2050 2200 1900
+Wire Wire Line
+	2300 1900 2300 1950
+Wire Wire Line
+	2300 1950 1250 1950
+Wire Wire Line
+	1250 1950 1250 3250
+Wire Wire Line
+	1250 3250 1550 3250
+Wire Wire Line
+	2400 2850 2450 2850
+Wire Wire Line
+	2400 1900 2400 2850
+Wire Wire Line
+	4400 1900 4400 2050
+Wire Wire Line
+	4400 2050 3550 2050
+Wire Wire Line
+	3550 2050 3550 2850
+Wire Wire Line
+	3550 2850 3750 2850
+Wire Wire Line
+	3750 3250 3450 3250
+Wire Wire Line
+	3450 3250 3450 1950
+Wire Wire Line
+	3450 1950 4500 1950
+Wire Wire Line
+	4500 1950 4500 1900
+Wire Wire Line
+	4600 1900 4600 2850
+Wire Wire Line
+	4600 2850 4650 2850
+Wire Wire Line
+	2300 3600 4500 3600
+Wire Wire Line
+	4350 2950 4500 2950
+Wire Wire Line
+	4500 2950 4500 3600
+Wire Wire Line
+	2200 3700 4400 3700
+Wire Wire Line
+	4350 3350 4400 3350
+Wire Wire Line
+	4400 3350 4400 3700
+Wire Wire Line
+	3200 3800 5400 3800
+Wire Wire Line
+	5250 2950 5400 2950
+Wire Wire Line
+	5400 2950 5400 3800
+$Comp
+L Relay:AZ850-x K10
+U 1 1 5F87F4DE
+P 7250 2850
+F 0 "K10" V 6483 2850 50  0000 C CNN
+F 1 "AZ850-x" V 6574 2850 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 7800 2900 50  0001 C CNN
+F 3 "http://www.azettler.com/pdfs/az850.pdf" H 7250 2850 50  0001 C CNN
+	1    7250 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x03 J7
+U 1 1 5F87F6BC
+P 6800 1700
+F 0 "J7" V 6764 1512 50  0000 R CNN
+F 1 "INPUT3" V 6673 1512 50  0000 R CNN
+F 2 "TerminalBlock_RND:TerminalBlock_RND_205-00002_1x03_P5.00mm_Horizontal" H 6800 1700 50  0001 C CNN
+F 3 "~" H 6800 1700 50  0001 C CNN
+	1    6800 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Relay:AZ850-x K9
+U 1 1 5F87F6C6
+P 6350 2850
+F 0 "K9" V 5583 2850 50  0000 C CNN
+F 1 "AZ850-x" V 5674 2850 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 6900 2900 50  0001 C CNN
+F 3 "http://www.azettler.com/pdfs/az850.pdf" H 6350 2850 50  0001 C CNN
+	1    6350 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6700 1900 6700 2050
+Wire Wire Line
+	6700 2050 5850 2050
+Wire Wire Line
+	5850 2050 5850 2850
+Wire Wire Line
+	5850 2850 6050 2850
+Wire Wire Line
+	6050 3250 5750 3250
+Wire Wire Line
+	5750 3250 5750 1950
+Wire Wire Line
+	5750 1950 6800 1950
+Wire Wire Line
+	6800 1950 6800 1900
+Wire Wire Line
+	6900 1900 6900 2850
+Wire Wire Line
+	6900 2850 6950 2850
+$Comp
+L Relay:AZ850-x K12
+U 1 1 5F88FA87
+P 9550 2850
+F 0 "K12" V 8783 2850 50  0000 C CNN
+F 1 "AZ850-x" V 8874 2850 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 10100 2900 50  0001 C CNN
+F 3 "http://www.azettler.com/pdfs/az850.pdf" H 9550 2850 50  0001 C CNN
+	1    9550 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x03 J8
+U 1 1 5F88FD29
+P 9100 1700
+F 0 "J8" V 9064 1512 50  0000 R CNN
+F 1 "INPUT4" V 8973 1512 50  0000 R CNN
+F 2 "TerminalBlock_RND:TerminalBlock_RND_205-00002_1x03_P5.00mm_Horizontal" H 9100 1700 50  0001 C CNN
+F 3 "~" H 9100 1700 50  0001 C CNN
+	1    9100 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Relay:AZ850-x K11
+U 1 1 5F88FD33
+P 8650 2850
+F 0 "K11" V 7883 2850 50  0000 C CNN
+F 1 "AZ850-x" V 7974 2850 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 9200 2900 50  0001 C CNN
+F 3 "http://www.azettler.com/pdfs/az850.pdf" H 8650 2850 50  0001 C CNN
+	1    8650 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9000 1900 9000 2050
+Wire Wire Line
+	9000 2050 8150 2050
+Wire Wire Line
+	8150 2050 8150 2850
+Wire Wire Line
+	8150 2850 8350 2850
+Wire Wire Line
+	8350 3250 8050 3250
+Wire Wire Line
+	8050 3250 8050 1950
+Wire Wire Line
+	8050 1950 9100 1950
+Wire Wire Line
+	9100 1950 9100 1900
+Wire Wire Line
+	9200 1900 9200 2850
+Wire Wire Line
+	9200 2850 9250 2850
+$Comp
+L Relay:AZ850-x K14
+U 1 1 5F894C50
+P 12000 2850
+F 0 "K14" V 11233 2850 50  0000 C CNN
+F 1 "AZ850-x" V 11324 2850 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 12550 2900 50  0001 C CNN
+F 3 "http://www.azettler.com/pdfs/az850.pdf" H 12000 2850 50  0001 C CNN
+	1    12000 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x03 J9
+U 1 1 5F894FB6
+P 11550 1700
+F 0 "J9" V 11514 1512 50  0000 R CNN
+F 1 "INPUT5" V 11423 1512 50  0000 R CNN
+F 2 "TerminalBlock_RND:TerminalBlock_RND_205-00002_1x03_P5.00mm_Horizontal" H 11550 1700 50  0001 C CNN
+F 3 "~" H 11550 1700 50  0001 C CNN
+	1    11550 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Relay:AZ850-x K13
+U 1 1 5F894FC0
+P 11100 2850
+F 0 "K13" V 10333 2850 50  0000 C CNN
+F 1 "AZ850-x" V 10424 2850 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 11650 2900 50  0001 C CNN
+F 3 "http://www.azettler.com/pdfs/az850.pdf" H 11100 2850 50  0001 C CNN
+	1    11100 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11450 1900 11450 2050
+Wire Wire Line
+	11450 2050 10600 2050
+Wire Wire Line
+	10600 2050 10600 2850
+Wire Wire Line
+	10600 2850 10800 2850
+Wire Wire Line
+	10800 3250 10500 3250
+Wire Wire Line
+	10500 3250 10500 1950
+Wire Wire Line
+	10500 1950 11550 1950
+Wire Wire Line
+	11550 1950 11550 1900
+Wire Wire Line
+	11650 1900 11650 2850
+Wire Wire Line
+	11650 2850 11700 2850
+$Comp
+L Connector:Screw_Terminal_01x03 J10
+U 1 1 5F89F82D
+P 14000 3700
+F 0 "J10" H 14080 3742 50  0000 L CNN
+F 1 "INPUT" H 14080 3651 50  0000 L CNN
+F 2 "TerminalBlock_RND:TerminalBlock_RND_205-00002_1x03_P5.00mm_Horizontal" H 14000 3700 50  0001 C CNN
+F 3 "~" H 14000 3700 50  0001 C CNN
+	1    14000 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3600 6800 3600
+Connection ~ 4500 3600
+Connection ~ 4400 3700
+Wire Wire Line
+	5400 3800 7700 3800
+Connection ~ 5400 3800
+Wire Wire Line
+	6650 2950 6800 2950
+Wire Wire Line
+	6800 2950 6800 3600
+Connection ~ 6800 3600
+Wire Wire Line
+	6800 3600 9100 3600
+Wire Wire Line
+	7550 2950 7700 2950
+Wire Wire Line
+	7700 2950 7700 3800
+Connection ~ 7700 3800
+Wire Wire Line
+	7700 3800 10050 3800
+Wire Wire Line
+	8950 2950 9100 2950
+Wire Wire Line
+	9100 2950 9100 3600
+Connection ~ 9100 3600
+Wire Wire Line
+	9100 3600 11550 3600
+Wire Wire Line
+	9850 2950 10050 2950
+Wire Wire Line
+	10050 2950 10050 3800
+Connection ~ 10050 3800
+Wire Wire Line
+	10050 3800 12450 3800
+Wire Wire Line
+	11400 2950 11550 2950
+Wire Wire Line
+	11550 2950 11550 3600
+Connection ~ 11550 3600
+Wire Wire Line
+	12300 2950 12450 2950
+Wire Wire Line
+	12450 2950 12450 3800
+Connection ~ 12450 3800
+Wire Wire Line
+	2300 2750 2150 2750
+Wire Wire Line
+	2300 2750 2300 3600
+Wire Wire Line
+	2200 3150 2150 3150
+Wire Wire Line
+	2200 3150 2200 3700
+Wire Wire Line
+	3200 2750 3050 2750
+Wire Wire Line
+	3200 2750 3200 3800
+Text Notes 1050 3600 0    50   ~ 0
+Wejście 1 jest domyślnie podłączone
+Wire Wire Line
+	11550 3600 13800 3600
+Wire Wire Line
+	12450 3800 13800 3800
+Wire Wire Line
+	1550 2450 1450 2450
+Wire Wire Line
+	3100 2450 3050 2450
+Wire Wire Line
+	4450 2100 4450 2450
+Wire Wire Line
+	4450 2450 4350 2450
+Wire Wire Line
+	5350 2450 5250 2450
+Wire Wire Line
+	6750 2100 6750 2450
+Wire Wire Line
+	6750 2450 6650 2450
+Wire Wire Line
+	7700 2450 7550 2450
+Wire Wire Line
+	9000 2100 9000 2450
+Wire Wire Line
+	9000 2450 8950 2450
+Wire Wire Line
+	9950 2450 9850 2450
+Wire Wire Line
+	11500 2100 11500 2450
+Wire Wire Line
+	11500 2450 11400 2450
+Wire Wire Line
+	12400 2450 12300 2450
+Wire Wire Line
+	3700 2450 3750 2450
+Wire Wire Line
+	6000 2450 6050 2450
+Wire Wire Line
+	8300 2450 8350 2450
+Wire Wire Line
+	10750 2450 10800 2450
+NoConn ~ 12300 2750
+NoConn ~ 12300 3150
+NoConn ~ 11700 3250
+NoConn ~ 11400 2750
+NoConn ~ 9850 2750
+NoConn ~ 9850 3350
+NoConn ~ 9250 3250
+NoConn ~ 8950 2750
+NoConn ~ 7550 2750
+NoConn ~ 7550 3150
+NoConn ~ 7550 3350
+NoConn ~ 6950 3250
+NoConn ~ 12300 3350
+NoConn ~ 9850 3150
+NoConn ~ 5250 2750
+NoConn ~ 5250 3150
+NoConn ~ 5250 3350
+NoConn ~ 4650 3250
+NoConn ~ 4350 2750
+NoConn ~ 4350 3150
+NoConn ~ 3050 2950
+NoConn ~ 3050 3350
+NoConn ~ 3050 3150
+NoConn ~ 2450 3250
+NoConn ~ 2150 3350
+NoConn ~ 2150 2950
+$Comp
+L Relay:AZ850-x K6
+U 1 1 5F9C2CF1
+P 2750 5800
+F 0 "K6" V 1983 5800 50  0000 C CNN
+F 1 "AZ850-x" V 2074 5800 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 3300 5850 50  0001 C CNN
+F 3 "http://www.azettler.com/pdfs/az850.pdf" H 2750 5800 50  0001 C CNN
+	1    2750 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x03 J3
+U 1 1 5F9C313F
+P 1700 4300
+F 0 "J3" V 1664 4112 50  0000 R CNN
+F 1 "OUTPUT_PRE" V 1573 4112 50  0000 R CNN
+F 2 "TerminalBlock_RND:TerminalBlock_RND_205-00002_1x03_P5.00mm_Horizontal" H 1700 4300 50  0001 C CNN
+F 3 "~" H 1700 4300 50  0001 C CNN
+	1    1700 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Relay:AZ850-x K5
+U 1 1 5F9C3149
+P 1850 5800
+F 0 "K5" V 1083 5800 50  0000 C CNN
+F 1 "AZ850-x" V 1174 5800 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 2400 5850 50  0001 C CNN
+F 3 "http://www.azettler.com/pdfs/az850.pdf" H 1850 5800 50  0001 C CNN
+	1    1850 5800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1550 5800 1350 5800
+Wire Wire Line
+	2400 5800 2450 5800
+Text Notes 1050 6550 0    50   ~ 0
+Wyjście PRE (z przedwzmacniacza) jest domyślnie podłączone
+Wire Wire Line
+	1550 5400 1450 5400
+Wire Wire Line
+	2450 5400 2450 5150
+Wire Wire Line
+	2450 5150 1450 5150
+Wire Wire Line
+	1450 5150 1450 5400
+Wire Wire Line
+	2150 5400 2150 5050
+Wire Wire Line
+	3100 5400 3050 5400
+NoConn ~ 2450 6200
+$Comp
+L Connector:Screw_Terminal_01x03 J4
+U 1 1 5F9D3199
+P 2600 4300
+F 0 "J4" V 2564 4112 50  0000 R CNN
+F 1 "OUTPUT_DIRECT" V 2473 4112 50  0000 R CNN
+F 2 "TerminalBlock_RND:TerminalBlock_RND_205-00002_1x03_P5.00mm_Horizontal" H 2600 4300 50  0001 C CNN
+F 3 "~" H 2600 4300 50  0001 C CNN
+	1    2600 4300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1600 4500 1600 4800
+Wire Wire Line
+	1600 4800 2200 4800
+Wire Wire Line
+	2200 4800 2200 5700
+Wire Wire Line
+	2200 5700 2150 5700
+Wire Wire Line
+	2500 4500 2500 4800
+Wire Wire Line
+	2500 4800 2250 4800
+Wire Wire Line
+	2250 4800 2250 5900
+Wire Wire Line
+	2250 5900 2150 5900
+Wire Wire Line
+	2300 6100 2300 4700
+Wire Wire Line
+	2300 4700 1700 4700
+Wire Wire Line
+	1700 4700 1700 4500
+Wire Wire Line
+	2150 6100 2300 6100
+Wire Wire Line
+	2600 4500 2600 4700
+Wire Wire Line
+	2600 4700 2350 4700
+Wire Wire Line
+	2350 4700 2350 6300
+Wire Wire Line
+	2350 6300 2150 6300
+Wire Wire Line
+	1800 4500 1800 4600
+Wire Wire Line
+	1800 4600 3250 4600
+Wire Wire Line
+	3250 4600 3250 5700
+Wire Wire Line
+	3050 5700 3250 5700
+Wire Wire Line
+	2700 4500 3350 4500
+Wire Wire Line
+	3350 4500 3350 5900
+Wire Wire Line
+	3350 5900 3050 5900
+Wire Wire Line
+	1350 5800 1350 6650
+Wire Wire Line
+	1550 6200 1450 6200
+Wire Wire Line
+	1450 6200 1450 6750
+Wire Wire Line
+	2400 5800 2400 6850
+NoConn ~ 3050 6100
+NoConn ~ 3050 6300
+$Comp
+L Relay:AZ850-x K7
+U 1 1 5FA7F89D
+P 4200 5800
+F 0 "K7" V 3433 5800 50  0000 C CNN
+F 1 "AZ850-x" V 3524 5800 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 4750 5850 50  0001 C CNN
+F 3 "http://www.azettler.com/pdfs/az850.pdf" H 4200 5800 50  0001 C CNN
+	1    4200 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L Relay:AZ850-x K8
+U 1 1 5FA8241E
+P 5200 5800
+F 0 "K8" V 4433 5800 50  0000 C CNN
+F 1 "AZ850-x" V 4524 5800 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 5750 5850 50  0001 C CNN
+F 3 "http://www.azettler.com/pdfs/az850.pdf" H 5200 5800 50  0001 C CNN
+	1    5200 5800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4550 5400 4500 5400
+Wire Wire Line
+	5600 5400 5500 5400
+Wire Wire Line
+	3800 5150 3800 5400
+Wire Wire Line
+	3800 5400 3900 5400
+Connection ~ 2450 5150
+Wire Wire Line
+	3800 5150 4850 5150
+Wire Wire Line
+	4850 5150 4850 5400
+Wire Wire Line
+	4850 5400 4900 5400
+Connection ~ 3800 5150
+$Comp
+L Connector:Screw_Terminal_01x03 J6
+U 1 1 5FAD8F41
+P 5350 7250
+F 0 "J6" H 5430 7292 50  0000 L CNN
+F 1 "OUTPUT" H 5430 7201 50  0000 L CNN
+F 2 "TerminalBlock_RND:TerminalBlock_RND_205-00002_1x03_P5.00mm_Horizontal" H 5350 7250 50  0001 C CNN
+F 3 "~" H 5350 7250 50  0001 C CNN
+	1    5350 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 6650 4600 5700
+Wire Wire Line
+	4600 5700 4500 5700
+Wire Wire Line
+	1350 6650 4600 6650
+Wire Wire Line
+	1450 6750 4700 6750
+Wire Wire Line
+	5650 6850 5650 5700
+Wire Wire Line
+	5650 5700 5500 5700
+Wire Wire Line
+	2400 6850 5650 6850
+Wire Wire Line
+	3900 5800 3700 5800
+Wire Wire Line
+	3700 5800 3700 7150
+Wire Wire Line
+	3700 7150 5150 7150
+Wire Wire Line
+	3900 6200 3800 6200
+Wire Wire Line
+	3800 6200 3800 7250
+Wire Wire Line
+	3800 7250 5150 7250
+Wire Wire Line
+	4900 5800 4800 5800
+Wire Wire Line
+	4800 5800 4800 7350
+Wire Wire Line
+	4800 7350 5150 7350
+NoConn ~ 5500 5900
+NoConn ~ 5500 6100
+NoConn ~ 5500 6300
+NoConn ~ 4900 6200
+NoConn ~ 4500 6300
+NoConn ~ 4500 5900
+Wire Wire Line
+	4700 6750 4700 6100
+Wire Wire Line
+	4700 6100 4500 6100
+$Comp
+L power:GND #PWR0102
+U 1 1 5FB8F213
+P 1400 1050
+F 0 "#PWR0102" H 1400 800 50  0001 C CNN
+F 1 "GND" H 1405 877 50  0000 C CNN
+F 2 "" H 1400 1050 50  0001 C CNN
+F 3 "" H 1400 1050 50  0001 C CNN
+	1    1400 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5FB8FC2D
+P 1150 950
+F 0 "#FLG0101" H 1150 1025 50  0001 C CNN
+F 1 "PWR_FLAG" H 1150 1123 50  0000 C CNN
+F 2 "" H 1150 950 50  0001 C CNN
+F 3 "~" H 1150 950 50  0001 C CNN
+	1    1150 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5FB907EC
+P 1650 950
+F 0 "#FLG0102" H 1650 1025 50  0001 C CNN
+F 1 "PWR_FLAG" H 1650 1123 50  0000 C CNN
+F 2 "" H 1650 950 50  0001 C CNN
+F 3 "~" H 1650 950 50  0001 C CNN
+	1    1650 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  1000 1150 1000
+Wire Wire Line
+	1150 1000 1150 950 
+Wire Wire Line
+	1400 1050 1400 1000
+Wire Wire Line
+	1400 1000 1650 1000
+Wire Wire Line
+	1650 1000 1650 950 
+$Comp
+L Connector_Generic:Conn_01x10 J11
+U 1 1 5FC2B202
+P 10900 5800
+F 0 "J11" H 10980 5842 50  0000 L CNN
+F 1 "CONTROL" H 10980 5751 50  0000 L CNN
+F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical" H 10900 5800 50  0001 C CNN
+F 3 "~" H 10900 5800 50  0001 C CNN
+	1    10900 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J5
+U 1 1 5FC97D86
+P 3200 1000
+F 0 "J5" H 3250 1217 50  0000 C CNN
+F 1 "POWER" H 3250 1126 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 3200 1000 50  0001 C CNN
+F 3 "~" H 3200 1000 50  0001 C CNN
+	1    3200 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 1100 2450 1100
+$Comp
+L power:GND #PWR0106
+U 1 1 5FCD77CB
+P 2450 1200
+F 0 "#PWR0106" H 2450 950 50  0001 C CNN
+F 1 "GND" H 2455 1027 50  0000 C CNN
+F 2 "" H 2450 1200 50  0001 C CNN
+F 3 "" H 2450 1200 50  0001 C CNN
+	1    2450 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 1200 2450 1100
+Wire Wire Line
+	2450 1000 3000 1000
+Connection ~ 3000 1000
+Wire Wire Line
+	3000 1000 3500 1000
+Wire Wire Line
+	3500 1100 3000 1100
+Connection ~ 3000 1100
+$Comp
+L Device:C C1
+U 1 1 5FD0754C
+P 4750 1000
+F 0 "C1" H 4865 1046 50  0000 L CNN
+F 1 "C" H 4865 955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 4788 850 50  0001 C CNN
+F 3 "~" H 4750 1000 50  0001 C CNN
+	1    4750 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C2
+U 1 1 5FD0805C
+P 5200 1000
+F 0 "C2" H 5318 1046 50  0000 L CNN
+F 1 "CP" H 5318 955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 5238 850 50  0001 C CNN
+F 3 "~" H 5200 1000 50  0001 C CNN
+	1    5200 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5FD08E6F
+P 4450 1150
+F 0 "#PWR0108" H 4450 900 50  0001 C CNN
+F 1 "GND" H 4455 977 50  0000 C CNN
+F 2 "" H 4450 1150 50  0001 C CNN
+F 3 "" H 4450 1150 50  0001 C CNN
+	1    4450 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 850  4750 850 
+Wire Wire Line
+	4750 850  5200 850 
+Connection ~ 4750 850 
+Wire Wire Line
+	4450 1150 4750 1150
+Wire Wire Line
+	4750 1150 5200 1150
+Connection ~ 4750 1150
+NoConn ~ 6650 2750
+$Comp
+L Device:LED D2
+U 1 1 5FD6D561
+P 9400 5400
+F 0 "D2" H 9393 5617 50  0000 C CNN
+F 1 "LED" H 9393 5526 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 9400 5400 50  0001 C CNN
+F 3 "~" H 9400 5400 50  0001 C CNN
+	1    9400 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5FD6E1A4
+P 8650 5400
+F 0 "R2" V 8443 5400 50  0000 C CNN
+F 1 "1k" V 8534 5400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8580 5400 50  0001 C CNN
+F 3 "~" H 8650 5400 50  0001 C CNN
+	1    8650 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 5FD6ECDD
+P 9600 5500
+F 0 "D4" H 9593 5717 50  0000 C CNN
+F 1 "LED" H 9593 5626 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 9600 5500 50  0001 C CNN
+F 3 "~" H 9600 5500 50  0001 C CNN
+	1    9600 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D6
+U 1 1 5FD6EF67
+P 9800 5600
+F 0 "D6" H 9793 5817 50  0000 C CNN
+F 1 "LED" H 9793 5726 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 9800 5600 50  0001 C CNN
+F 3 "~" H 9800 5600 50  0001 C CNN
+	1    9800 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5FD6F248
+P 9200 5700
+F 0 "D1" H 9193 5917 50  0000 C CNN
+F 1 "LED" H 9193 5826 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 9200 5700 50  0001 C CNN
+F 3 "~" H 9200 5700 50  0001 C CNN
+	1    9200 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5FD6F5A2
+P 9400 5800
+F 0 "D3" H 9393 6017 50  0000 C CNN
+F 1 "LED" H 9393 5926 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 9400 5800 50  0001 C CNN
+F 3 "~" H 9400 5800 50  0001 C CNN
+	1    9400 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D5
+U 1 1 5FD6F87E
+P 9600 5900
+F 0 "D5" H 9593 6117 50  0000 C CNN
+F 1 "LED" H 9593 6026 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 9600 5900 50  0001 C CNN
+F 3 "~" H 9600 5900 50  0001 C CNN
+	1    9600 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5FD701A2
+P 8850 5500
+F 0 "R4" V 8643 5500 50  0000 C CNN
+F 1 "1k" V 8734 5500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8780 5500 50  0001 C CNN
+F 3 "~" H 8850 5500 50  0001 C CNN
+	1    8850 5500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5FD70449
+P 9050 5600
+F 0 "R6" V 8843 5600 50  0000 C CNN
+F 1 "1k" V 8934 5600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8980 5600 50  0001 C CNN
+F 3 "~" H 9050 5600 50  0001 C CNN
+	1    9050 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5FD707BD
+P 8450 5700
+F 0 "R1" V 8243 5700 50  0000 C CNN
+F 1 "1k" V 8334 5700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8380 5700 50  0001 C CNN
+F 3 "~" H 8450 5700 50  0001 C CNN
+	1    8450 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5FD7097D
+P 8650 5800
+F 0 "R3" V 8443 5800 50  0000 C CNN
+F 1 "1k" V 8534 5800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8580 5800 50  0001 C CNN
+F 3 "~" H 8650 5800 50  0001 C CNN
+	1    8650 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5FD70D88
+P 8850 5900
+F 0 "R5" V 8643 5900 50  0000 C CNN
+F 1 "1k" V 8734 5900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8780 5900 50  0001 C CNN
+F 3 "~" H 8850 5900 50  0001 C CNN
+	1    8850 5900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5FD70F3D
+P 9050 6000
+F 0 "R7" V 8843 6000 50  0000 C CNN
+F 1 "1k" V 8934 6000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8980 6000 50  0001 C CNN
+F 3 "~" H 9050 6000 50  0001 C CNN
+	1    9050 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D7
+U 1 1 5FD7113C
+P 9800 6000
+F 0 "D7" H 9793 6217 50  0000 C CNN
+F 1 "LED" H 9793 6126 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 9800 6000 50  0001 C CNN
+F 3 "~" H 9800 6000 50  0001 C CNN
+	1    9800 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 5400 10700 5400
+Wire Wire Line
+	9750 5500 10700 5500
+Wire Wire Line
+	9950 5600 10700 5600
+Wire Wire Line
+	9350 5700 10700 5700
+Wire Wire Line
+	9550 5800 10700 5800
+Wire Wire Line
+	9750 5900 10700 5900
+Wire Wire Line
+	9950 6000 10700 6000
+Wire Wire Line
+	9250 5400 8800 5400
+Wire Wire Line
+	9000 5500 9450 5500
+Wire Wire Line
+	9200 5600 9650 5600
+Wire Wire Line
+	9650 6000 9200 6000
+Wire Wire Line
+	9450 5900 9000 5900
+Wire Wire Line
+	9250 5800 8800 5800
+Wire Wire Line
+	9050 5700 8600 5700
+$Comp
+L power:GND #PWR01
+U 1 1 5FE84328
+P 8050 6500
+F 0 "#PWR01" H 8050 6250 50  0001 C CNN
+F 1 "GND" H 8055 6327 50  0000 C CNN
+F 2 "" H 8050 6500 50  0001 C CNN
+F 3 "" H 8050 6500 50  0001 C CNN
+	1    8050 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 5400 8500 5400
+Wire Wire Line
+	8700 5500 8050 5500
+Connection ~ 8050 5500
+Wire Wire Line
+	8050 5500 8050 5400
+Wire Wire Line
+	8900 5600 8050 5600
+Connection ~ 8050 5600
+Wire Wire Line
+	8050 5600 8050 5500
+Wire Wire Line
+	8300 5700 8050 5700
+Connection ~ 8050 5700
+Wire Wire Line
+	8050 5700 8050 5600
+Wire Wire Line
+	8500 5800 8050 5800
+Connection ~ 8050 5800
+Wire Wire Line
+	8050 5800 8050 5700
+Wire Wire Line
+	8700 5900 8050 5900
+Connection ~ 8050 5900
+Wire Wire Line
+	8050 5900 8050 5800
+Wire Wire Line
+	8900 6000 8050 6000
+Wire Wire Line
+	8050 5900 8050 6000
+Connection ~ 8050 6000
+$Comp
+L Diode:1N4148 D8
+U 1 1 5FF9E2EA
+P 1850 1850
+F 0 "D8" H 1850 1633 50  0000 C CNN
+F 1 "1N4148" H 1850 1724 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 1850 1675 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 1850 1850 50  0001 C CNN
+	1    1850 1850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1450 1850 1700 1850
+Wire Wire Line
+	2000 1850 2050 1850
+$Comp
+L Diode:1N4148 D10
+U 1 1 5FFCAE2E
+P 2750 1850
+F 0 "D10" H 2750 1633 50  0000 C CNN
+F 1 "1N4148" H 2750 1724 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2750 1675 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 2750 1850 50  0001 C CNN
+	1    2750 1850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2450 1850 2600 1850
+Wire Wire Line
+	2900 1850 3100 1850
+$Comp
+L Diode:1N4148 D12
+U 1 1 5FFF473A
+P 4050 1850
+F 0 "D12" H 4050 1633 50  0000 C CNN
+F 1 "1N4148" H 4050 1724 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4050 1675 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4050 1850 50  0001 C CNN
+	1    4050 1850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3700 1850 3900 1850
+Wire Wire Line
+	4200 1850 4300 1850
+Wire Wire Line
+	4300 1850 4300 2100
+Wire Wire Line
+	4300 2100 4450 2100
+$Comp
+L Diode:1N4148 D14
+U 1 1 6001FD7F
+P 4950 1850
+F 0 "D14" H 4950 1633 50  0000 C CNN
+F 1 "1N4148" H 4950 1724 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4950 1675 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4950 1850 50  0001 C CNN
+	1    4950 1850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4650 1850 4800 1850
+Wire Wire Line
+	5100 1850 5350 1850
+$Comp
+L Diode:1N4148 D16
+U 1 1 6004C5C5
+P 6350 1850
+F 0 "D16" H 6350 1633 50  0000 C CNN
+F 1 "1N4148" H 6350 1724 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 6350 1675 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 6350 1850 50  0001 C CNN
+	1    6350 1850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6000 1850 6200 1850
+Wire Wire Line
+	6500 1850 6550 1850
+Wire Wire Line
+	6650 1850 6650 2100
+Wire Wire Line
+	6650 2100 6750 2100
+$Comp
+L Diode:1N4148 D17
+U 1 1 6007A5C5
+P 7250 1850
+F 0 "D17" H 7250 1633 50  0000 C CNN
+F 1 "1N4148" H 7250 1724 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 7250 1675 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 7250 1850 50  0001 C CNN
+	1    7250 1850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6950 1850 7100 1850
+Wire Wire Line
+	7400 1850 7700 1850
+$Comp
+L Diode:1N4148 D18
+U 1 1 600A98B1
+P 8600 1800
+F 0 "D18" H 8600 1583 50  0000 C CNN
+F 1 "1N4148" H 8600 1674 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 8600 1625 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 8600 1800 50  0001 C CNN
+	1    8600 1800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8300 1800 8450 1800
+Wire Wire Line
+	8750 1800 8900 1800
+Wire Wire Line
+	8900 1800 8900 2100
+Wire Wire Line
+	8900 2100 9000 2100
+$Comp
+L Diode:1N4148 D19
+U 1 1 600D9CAA
+P 9550 1800
+F 0 "D19" H 9550 1583 50  0000 C CNN
+F 1 "1N4148" H 9550 1674 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 9550 1625 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 9550 1800 50  0001 C CNN
+	1    9550 1800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9250 1800 9400 1800
+Wire Wire Line
+	9700 1800 9950 1800
+$Comp
+L Diode:1N4148 D20
+U 1 1 6010B4F8
+P 11100 1800
+F 0 "D20" H 11100 1583 50  0000 C CNN
+F 1 "1N4148" H 11100 1674 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 11100 1625 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 11100 1800 50  0001 C CNN
+	1    11100 1800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10750 1800 10950 1800
+Wire Wire Line
+	11250 1800 11350 1800
+Wire Wire Line
+	11350 1800 11350 2100
+Wire Wire Line
+	11350 2100 11500 2100
+$Comp
+L Diode:1N4148 D21
+U 1 1 6013E98C
+P 12000 1800
+F 0 "D21" H 12000 1583 50  0000 C CNN
+F 1 "1N4148" H 12000 1674 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 12000 1625 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 12000 1800 50  0001 C CNN
+	1    12000 1800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11700 1800 11850 1800
+Wire Wire Line
+	12150 1800 12400 1800
+$Comp
+L Diode:1N4148 D9
+U 1 1 60172873
+P 1850 4950
+F 0 "D9" H 1850 4733 50  0000 C CNN
+F 1 "1N4148" H 1850 4824 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 1850 4775 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 1850 4950 50  0001 C CNN
+	1    1850 4950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1450 5150 1450 4950
+Wire Wire Line
+	1450 4950 1700 4950
+Connection ~ 1450 5150
+Wire Wire Line
+	2000 4950 2100 4950
+Wire Wire Line
+	2100 4950 2100 5050
+Wire Wire Line
+	2100 5050 2150 5050
+$Comp
+L Diode:1N4148 D11
+U 1 1 601A8E1E
+P 2750 4950
+F 0 "D11" H 2750 4733 50  0000 C CNN
+F 1 "1N4148" H 2750 4824 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2750 4775 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 2750 4950 50  0001 C CNN
+	1    2750 4950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2450 5150 2450 4950
+Wire Wire Line
+	2450 4950 2600 4950
+Wire Wire Line
+	2900 4950 3100 4950
+$Comp
+L Diode:1N4148 D13
+U 1 1 601E07A2
+P 4150 4950
+F 0 "D13" H 4150 4733 50  0000 C CNN
+F 1 "1N4148" H 4150 4824 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4150 4775 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4150 4950 50  0001 C CNN
+	1    4150 4950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3800 5150 3800 4950
+Wire Wire Line
+	3800 4950 4000 4950
+Wire Wire Line
+	4300 4950 4550 4950
+$Comp
+L Diode:1N4148 D15
+U 1 1 6021979A
+P 5150 4950
+F 0 "D15" H 5150 4733 50  0000 C CNN
+F 1 "1N4148" H 5150 4824 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5150 4775 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 5150 4950 50  0001 C CNN
+	1    5150 4950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4850 5150 4850 4950
+Wire Wire Line
+	4850 4950 5000 4950
+Connection ~ 4850 5150
+Wire Wire Line
+	5300 4950 5600 4950
+$Comp
+L power:+12V #PWR02
+U 1 1 5F8B54A3
+P 900 900
+F 0 "#PWR02" H 900 750 50  0001 C CNN
+F 1 "+12V" H 915 1073 50  0000 C CNN
+F 2 "" H 900 900 50  0001 C CNN
+F 3 "" H 900 900 50  0001 C CNN
+	1    900  900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  900  900  1000
+$Comp
+L power:+12V #PWR0101
+U 1 1 5FB80534
+P 2450 850
+F 0 "#PWR0101" H 2450 700 50  0001 C CNN
+F 1 "+12V" H 2465 1023 50  0000 C CNN
+F 2 "" H 2450 850 50  0001 C CNN
+F 3 "" H 2450 850 50  0001 C CNN
+	1    2450 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0105
+U 1 1 5FB80857
+P 4450 750
+F 0 "#PWR0105" H 4450 600 50  0001 C CNN
+F 1 "+12V" H 4465 923 50  0000 C CNN
+F 2 "" H 4450 750 50  0001 C CNN
+F 3 "" H 4450 750 50  0001 C CNN
+	1    4450 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 850  2450 1000
+Wire Wire Line
+	4450 750  4450 850 
+$Comp
+L power:GND #PWR0107
+U 1 1 5FBF24B7
+P 7900 7650
+F 0 "#PWR0107" H 7900 7400 50  0001 C CNN
+F 1 "GND" H 7905 7477 50  0000 C CNN
+F 2 "" H 7900 7650 50  0001 C CNN
+F 3 "" H 7900 7650 50  0001 C CNN
+	1    7900 7650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5FBF1523
+P 7350 7350
+F 0 "R8" V 7143 7350 50  0000 C CNN
+F 1 "R" V 7234 7350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7280 7350 50  0001 C CNN
+F 3 "~" H 7350 7350 50  0001 C CNN
+	1    7350 7350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7900 7650 7900 7550
+Wire Wire Line
+	7500 7350 7600 7350
+Wire Wire Line
+	7200 7350 6750 7350
+Wire Wire Line
+	7900 7150 7550 7150
+Text Label 7600 7150 0    50   ~ 0
+REL_1
+Text Label 6850 7350 0    50   ~ 0
+REL_1_IN
+Text Label 10100 5400 0    50   ~ 0
+REL_1_IN
+Text Label 10100 5500 0    50   ~ 0
+REL_2_IN
+Text Label 10100 5600 0    50   ~ 0
+REL_3_IN
+Text Label 10100 5700 0    50   ~ 0
+REL_4_IN
+Text Label 10100 5800 0    50   ~ 0
+REL_5_IN
+Text Label 10100 5900 0    50   ~ 0
+REL_OUT_OFF_IN
+Text Label 10100 6000 0    50   ~ 0
+REL_BYPASS_IN
+$Comp
+L Transistor_BJT:BC847 Q1
+U 1 1 5FD1BF08
+P 7800 7350
+F 0 "Q1" H 7991 7396 50  0000 L CNN
+F 1 "BC847" H 7991 7305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8000 7275 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 7800 7350 50  0001 L CNN
+	1    7800 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0103
+U 1 1 5FD3CB61
+P 1050 1550
+F 0 "#PWR0103" H 1050 1400 50  0001 C CNN
+F 1 "+12V" H 1065 1723 50  0000 C CNN
+F 2 "" H 1050 1550 50  0001 C CNN
+F 3 "" H 1050 1550 50  0001 C CNN
+	1    1050 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 1850 1450 2150
+Wire Wire Line
+	2450 1850 2450 2150
+Wire Wire Line
+	3700 1850 3700 2150
+Wire Wire Line
+	4650 1850 4650 2150
+Wire Wire Line
+	6000 1850 6000 2150
+Wire Wire Line
+	6950 1850 6950 2150
+Wire Wire Line
+	9250 1800 9250 2150
+Wire Wire Line
+	10750 1800 10750 2150
+Wire Wire Line
+	11700 1800 11700 2150
+Wire Wire Line
+	12400 1800 12400 2450
+Wire Wire Line
+	9950 1800 9950 2450
+Wire Wire Line
+	7700 1850 7700 2450
+Wire Wire Line
+	5350 1850 5350 2450
+Wire Wire Line
+	2150 1850 2150 2450
+Wire Wire Line
+	3100 1850 3100 2450
+Wire Wire Line
+	1450 2150 2450 2150
+Connection ~ 1450 2150
+Wire Wire Line
+	1450 2150 1450 2450
+Connection ~ 2450 2150
+Wire Wire Line
+	2450 2150 2450 2450
+Wire Wire Line
+	3700 2150 4650 2150
+Connection ~ 3700 2150
+Wire Wire Line
+	3700 2150 3700 2450
+Connection ~ 4650 2150
+Wire Wire Line
+	4650 2150 4650 2450
+Wire Wire Line
+	6000 2150 6950 2150
+Connection ~ 6000 2150
+Wire Wire Line
+	6000 2150 6000 2450
+Connection ~ 6950 2150
+Wire Wire Line
+	6950 2150 6950 2450
+Wire Wire Line
+	10750 2150 11700 2150
+Connection ~ 10750 2150
+Wire Wire Line
+	10750 2150 10750 2450
+Connection ~ 11700 2150
+Wire Wire Line
+	11700 2150 11700 2450
+Wire Wire Line
+	3100 4950 3100 5400
+Wire Wire Line
+	4550 4950 4550 5400
+Wire Wire Line
+	5600 4950 5600 5400
+Text Label 4650 5150 0    50   ~ 0
+REL_OUT_OFF
+Text Label 1600 5150 0    50   ~ 0
+REL_BYPASS
+Text Label 1550 2150 0    50   ~ 0
+REL_1
+Text Label 3800 2150 0    50   ~ 0
+REL_2
+Text Label 6100 2150 0    50   ~ 0
+REL_3
+Text Label 10850 2150 0    50   ~ 0
+REL_5
+Wire Wire Line
+	1050 1550 2050 1550
+Wire Wire Line
+	12400 1550 12400 1800
+Connection ~ 12400 1800
+Wire Wire Line
+	11350 1800 11350 1550
+Connection ~ 11350 1800
+Connection ~ 11350 1550
+Wire Wire Line
+	11350 1550 12400 1550
+Wire Wire Line
+	9950 1800 9950 1550
+Connection ~ 9950 1800
+Connection ~ 9950 1550
+Wire Wire Line
+	9950 1550 11350 1550
+Wire Wire Line
+	8900 1800 8900 1550
+Connection ~ 8900 1800
+Connection ~ 8900 1550
+Wire Wire Line
+	8900 1550 9950 1550
+Wire Wire Line
+	7700 1550 7700 1850
+Connection ~ 7700 1850
+Connection ~ 7700 1550
+Wire Wire Line
+	7700 1550 8900 1550
+Wire Wire Line
+	6550 1850 6550 1550
+Connection ~ 6550 1850
+Wire Wire Line
+	6550 1850 6650 1850
+Connection ~ 6550 1550
+Wire Wire Line
+	6550 1550 7700 1550
+Wire Wire Line
+	5350 1850 5350 1550
+Connection ~ 5350 1850
+Connection ~ 5350 1550
+Wire Wire Line
+	5350 1550 6550 1550
+Wire Wire Line
+	4300 1850 4300 1550
+Connection ~ 4300 1850
+Connection ~ 4300 1550
+Wire Wire Line
+	4300 1550 5350 1550
+Wire Wire Line
+	3100 1850 3100 1550
+Connection ~ 3100 1850
+Connection ~ 3100 1550
+Wire Wire Line
+	3100 1550 4300 1550
+Wire Wire Line
+	2050 1850 2050 1550
+Connection ~ 2050 1850
+Wire Wire Line
+	2050 1850 2150 1850
+Connection ~ 2050 1550
+Wire Wire Line
+	2050 1550 3100 1550
+$Comp
+L power:+12V #PWR0104
+U 1 1 5FEFBEDA
+P 1050 4050
+F 0 "#PWR0104" H 1050 3900 50  0001 C CNN
+F 1 "+12V" H 1065 4223 50  0000 C CNN
+F 2 "" H 1050 4050 50  0001 C CNN
+F 3 "" H 1050 4050 50  0001 C CNN
+	1    1050 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 4050 2100 4050
+Wire Wire Line
+	5600 4050 5600 4950
+Connection ~ 5600 4950
+Wire Wire Line
+	4550 4950 4550 4050
+Connection ~ 4550 4950
+Connection ~ 4550 4050
+Wire Wire Line
+	4550 4050 5600 4050
+Wire Wire Line
+	3100 4950 3100 4050
+Connection ~ 3100 4950
+Connection ~ 3100 4050
+Wire Wire Line
+	3100 4050 4550 4050
+Wire Wire Line
+	2100 4950 2100 4050
+Connection ~ 2100 4950
+Connection ~ 2100 4050
+Wire Wire Line
+	2100 4050 3100 4050
+Wire Wire Line
+	8300 1800 8300 2150
+Wire Wire Line
+	8300 2150 9250 2150
+Connection ~ 8300 2150
+Wire Wire Line
+	8300 2150 8300 2450
+Connection ~ 9250 2150
+Wire Wire Line
+	9250 2150 9250 2450
+Text Label 8400 2150 0    50   ~ 0
+REL_4
+$Comp
+L Connector:Screw_Terminal_01x02 J12
+U 1 1 5FFAE2C4
+P 3800 1000
+F 0 "J12" H 3880 992 50  0000 L CNN
+F 1 "POWER2" H 3880 901 50  0000 L CNN
+F 2 "TerminalBlock_RND:TerminalBlock_RND_205-00001_1x02_P5.00mm_Horizontal" H 3800 1000 50  0001 C CNN
+F 3 "~" H 3800 1000 50  0001 C CNN
+	1    3800 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 1000 3600 1000
+Connection ~ 3500 1000
+Wire Wire Line
+	3500 1100 3600 1100
+Connection ~ 3500 1100
+$Comp
+L Connector_Generic:Conn_01x02 J13
+U 1 1 60027B65
+P 8250 6350
+F 0 "J13" H 8330 6342 50  0000 L CNN
+F 1 "LED" H 8330 6251 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8250 6350 50  0001 C CNN
+F 3 "~" H 8250 6350 50  0001 C CNN
+	1    8250 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 6000 8050 6350
+Wire Wire Line
+	8050 6500 8050 6450
+$Comp
+L power:GND #PWR06
+U 1 1 6009E4EA
+P 9650 7650
+F 0 "#PWR06" H 9650 7400 50  0001 C CNN
+F 1 "GND" H 9655 7477 50  0000 C CNN
+F 2 "" H 9650 7650 50  0001 C CNN
+F 3 "" H 9650 7650 50  0001 C CNN
+	1    9650 7650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 6009F076
+P 9100 7350
+F 0 "R10" V 8893 7350 50  0000 C CNN
+F 1 "R" V 8984 7350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 9030 7350 50  0001 C CNN
+F 3 "~" H 9100 7350 50  0001 C CNN
+	1    9100 7350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9650 7650 9650 7550
+Wire Wire Line
+	9250 7350 9350 7350
+Wire Wire Line
+	8950 7350 8500 7350
+Wire Wire Line
+	9650 7150 9300 7150
+Text Label 9350 7150 0    50   ~ 0
+REL_2
+Text Label 8600 7350 0    50   ~ 0
+REL_2_IN
+$Comp
+L Transistor_BJT:BC847 Q3
+U 1 1 6009F086
+P 9550 7350
+F 0 "Q3" H 9741 7396 50  0000 L CNN
+F 1 "BC847" H 9741 7305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9750 7275 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 9550 7350 50  0001 L CNN
+	1    9550 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 600C419C
+P 11400 7650
+F 0 "#PWR08" H 11400 7400 50  0001 C CNN
+F 1 "GND" H 11405 7477 50  0000 C CNN
+F 2 "" H 11400 7650 50  0001 C CNN
+F 3 "" H 11400 7650 50  0001 C CNN
+	1    11400 7650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 600C4D70
+P 10850 7350
+F 0 "R12" V 10643 7350 50  0000 C CNN
+F 1 "R" V 10734 7350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 10780 7350 50  0001 C CNN
+F 3 "~" H 10850 7350 50  0001 C CNN
+	1    10850 7350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11400 7650 11400 7550
+Wire Wire Line
+	11000 7350 11100 7350
+Wire Wire Line
+	10700 7350 10250 7350
+Wire Wire Line
+	11400 7150 11050 7150
+Text Label 11100 7150 0    50   ~ 0
+REL_3
+Text Label 10350 7350 0    50   ~ 0
+REL_3_IN
+$Comp
+L Transistor_BJT:BC847 Q5
+U 1 1 600C4D80
+P 11300 7350
+F 0 "Q5" H 11491 7396 50  0000 L CNN
+F 1 "BC847" H 11491 7305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 11500 7275 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 11300 7350 50  0001 L CNN
+	1    11300 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 600C4D8A
+P 13150 7650
+F 0 "#PWR09" H 13150 7400 50  0001 C CNN
+F 1 "GND" H 13155 7477 50  0000 C CNN
+F 2 "" H 13150 7650 50  0001 C CNN
+F 3 "" H 13150 7650 50  0001 C CNN
+	1    13150 7650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R13
+U 1 1 600C4D94
+P 12600 7350
+F 0 "R13" V 12393 7350 50  0000 C CNN
+F 1 "R" V 12484 7350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 12530 7350 50  0001 C CNN
+F 3 "~" H 12600 7350 50  0001 C CNN
+	1    12600 7350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13150 7650 13150 7550
+Wire Wire Line
+	12750 7350 12850 7350
+Wire Wire Line
+	12450 7350 12000 7350
+Wire Wire Line
+	13150 7150 12800 7150
+Text Label 12850 7150 0    50   ~ 0
+REL_4
+Text Label 12100 7350 0    50   ~ 0
+REL_4_IN
+$Comp
+L Transistor_BJT:BC847 Q6
+U 1 1 600C4DA4
+P 13050 7350
+F 0 "Q6" H 13241 7396 50  0000 L CNN
+F 1 "BC847" H 13241 7305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 13250 7275 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 13050 7350 50  0001 L CNN
+	1    13050 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 600EEE91
+P 15000 7650
+F 0 "#PWR010" H 15000 7400 50  0001 C CNN
+F 1 "GND" H 15005 7477 50  0000 C CNN
+F 2 "" H 15000 7650 50  0001 C CNN
+F 3 "" H 15000 7650 50  0001 C CNN
+	1    15000 7650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 600EFAF5
+P 14450 7350
+F 0 "R14" V 14243 7350 50  0000 C CNN
+F 1 "R" V 14334 7350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 14380 7350 50  0001 C CNN
+F 3 "~" H 14450 7350 50  0001 C CNN
+	1    14450 7350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	15000 7650 15000 7550
+Wire Wire Line
+	14600 7350 14700 7350
+Wire Wire Line
+	14300 7350 13850 7350
+Wire Wire Line
+	15000 7150 14650 7150
+Text Label 14700 7150 0    50   ~ 0
+REL_5
+Text Label 13950 7350 0    50   ~ 0
+REL_5_IN
+$Comp
+L Transistor_BJT:BC847 Q7
+U 1 1 600EFB05
+P 14900 7350
+F 0 "Q7" H 15091 7396 50  0000 L CNN
+F 1 "BC847" H 15091 7305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 15100 7275 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 14900 7350 50  0001 L CNN
+	1    14900 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 60115027
+P 7900 8950
+F 0 "#PWR05" H 7900 8700 50  0001 C CNN
+F 1 "GND" H 7905 8777 50  0000 C CNN
+F 2 "" H 7900 8950 50  0001 C CNN
+F 3 "" H 7900 8950 50  0001 C CNN
+	1    7900 8950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 60115CD3
+P 7350 8650
+F 0 "R9" V 7143 8650 50  0000 C CNN
+F 1 "R" V 7234 8650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7280 8650 50  0001 C CNN
+F 3 "~" H 7350 8650 50  0001 C CNN
+	1    7350 8650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7900 8950 7900 8850
+Wire Wire Line
+	7500 8650 7600 8650
+Wire Wire Line
+	7200 8650 6750 8650
+Wire Wire Line
+	7900 8450 7550 8450
+Text Label 7600 8450 0    50   ~ 0
+REL_BYPASS
+Text Label 6850 8650 0    50   ~ 0
+REL_BYPASS_IN
+$Comp
+L Transistor_BJT:BC847 Q2
+U 1 1 60115CE3
+P 7800 8650
+F 0 "Q2" H 7991 8696 50  0000 L CNN
+F 1 "BC847" H 7991 8605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8000 8575 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 7800 8650 50  0001 L CNN
+	1    7800 8650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 60115CED
+P 9750 8950
+F 0 "#PWR07" H 9750 8700 50  0001 C CNN
+F 1 "GND" H 9755 8777 50  0000 C CNN
+F 2 "" H 9750 8950 50  0001 C CNN
+F 3 "" H 9750 8950 50  0001 C CNN
+	1    9750 8950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 60115CF7
+P 9200 8650
+F 0 "R11" V 8993 8650 50  0000 C CNN
+F 1 "R" V 9084 8650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 9130 8650 50  0001 C CNN
+F 3 "~" H 9200 8650 50  0001 C CNN
+	1    9200 8650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9750 8950 9750 8850
+Wire Wire Line
+	9350 8650 9450 8650
+Wire Wire Line
+	9050 8650 8600 8650
+Wire Wire Line
+	9750 8450 9400 8450
+Text Label 9450 8450 0    50   ~ 0
+REL_OUT_OFF
+Text Label 8700 8650 0    50   ~ 0
+REL_OUT_OFF_IN
+$Comp
+L Transistor_BJT:BC847 Q4
+U 1 1 60115D07
+P 9650 8650
+F 0 "Q4" H 9841 8696 50  0000 L CNN
+F 1 "BC847" H 9841 8605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9850 8575 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 9650 8650 50  0001 L CNN
+	1    9650 8650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 609995C6
+P 10600 6350
+F 0 "#PWR0109" H 10600 6100 50  0001 C CNN
+F 1 "GND" H 10605 6177 50  0000 C CNN
+F 2 "" H 10600 6350 50  0001 C CNN
+F 3 "" H 10600 6350 50  0001 C CNN
+	1    10600 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10600 6350 10600 6300
+Wire Wire Line
+	10600 6100 10700 6100
+Wire Wire Line
+	10700 6200 10600 6200
+Connection ~ 10600 6200
+Wire Wire Line
+	10600 6200 10600 6100
+Wire Wire Line
+	10700 6300 10600 6300
+Connection ~ 10600 6300
+Wire Wire Line
+	10600 6300 10600 6200
+Wire Wire Line
+	4400 3700 6700 3700
+Wire Wire Line
+	6650 3350 6700 3350
+Wire Wire Line
+	6700 3350 6700 3700
+Connection ~ 6700 3700
+Wire Wire Line
+	6700 3700 9000 3700
+Wire Wire Line
+	8950 3350 9000 3350
+Wire Wire Line
+	9000 3350 9000 3700
+Connection ~ 9000 3700
+Wire Wire Line
+	9000 3700 11450 3700
+Wire Wire Line
+	11400 3350 11450 3350
+Wire Wire Line
+	11450 3350 11450 3700
+Connection ~ 11450 3700
+Wire Wire Line
+	11450 3700 13800 3700
+Text Notes 7850 850  0    50   ~ 0
+UWAGA: w rev.A. jest błąd dla kanału R przekaźniki dla wejść 3-5 mają źle podłączone wyjście - z 9 zamiast 7
+NoConn ~ 11400 3150
+NoConn ~ 8950 3150
+NoConn ~ 6650 3150
+NoConn ~ 4400 6100
+$EndSCHEMATC

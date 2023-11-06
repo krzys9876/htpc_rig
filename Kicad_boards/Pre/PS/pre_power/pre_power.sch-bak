@@ -1,0 +1,255 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5F97411A
+P 4400 2200
+F 0 "#FLG02" H 4400 2275 50  0001 C CNN
+F 1 "PWR_FLAG" H 4400 2373 50  0000 C CNN
+F 2 "" H 4400 2200 50  0001 C CNN
+F 3 "~" H 4400 2200 50  0001 C CNN
+	1    4400 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5F9747B0
+P 4400 1250
+F 0 "#FLG01" H 4400 1325 50  0001 C CNN
+F 1 "PWR_FLAG" H 4400 1423 50  0000 C CNN
+F 2 "" H 4400 1250 50  0001 C CNN
+F 3 "~" H 4400 1250 50  0001 C CNN
+	1    4400 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D2
+U 1 1 5F9758DC
+P 2400 1550
+F 0 "D2" H 2400 1333 50  0000 C CNN
+F 1 "D" H 2400 1424 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220F-2_Vertical" H 2400 1550 50  0001 C CNN
+F 3 "~" H 2400 1550 50  0001 C CNN
+	1    2400 1550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D3
+U 1 1 5F975D43
+P 2850 1250
+F 0 "D3" H 2850 1033 50  0000 C CNN
+F 1 "D" H 2850 1124 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220F-2_Vertical" H 2850 1250 50  0001 C CNN
+F 3 "~" H 2850 1250 50  0001 C CNN
+	1    2850 1250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D4
+U 1 1 5F975FE8
+P 2850 1550
+F 0 "D4" H 2850 1333 50  0000 C CNN
+F 1 "D" H 2850 1424 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220F-2_Vertical" H 2850 1550 50  0001 C CNN
+F 3 "~" H 2850 1550 50  0001 C CNN
+	1    2850 1550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5F97739A
+P 4100 1650
+F 0 "C2" H 4215 1696 50  0000 L CNN
+F 1 "330n" H 4215 1605 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 4138 1500 50  0001 C CNN
+F 3 "~" H 4100 1650 50  0001 C CNN
+	1    4100 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D1
+U 1 1 5F975065
+P 2400 1250
+F 0 "D1" H 2400 1033 50  0000 C CNN
+F 1 "D" H 2400 1124 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220F-2_Vertical" H 2400 1250 50  0001 C CNN
+F 3 "~" H 2400 1250 50  0001 C CNN
+	1    2400 1250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1850 1400 2250 1400
+Wire Wire Line
+	2250 1400 2250 1250
+Wire Wire Line
+	2250 1400 2250 1550
+Connection ~ 2250 1400
+Wire Wire Line
+	3000 1250 3000 1400
+Wire Wire Line
+	3000 1550 3000 1400
+Connection ~ 3000 1400
+Text Label 3100 1400 0    50   ~ 0
+RECT+
+Text Label 1950 1400 0    50   ~ 0
+RECT-
+Wire Wire Line
+	2550 1250 2600 1250
+Wire Wire Line
+	2700 1550 2600 1550
+Connection ~ 2600 1250
+Wire Wire Line
+	2600 1250 2700 1250
+Connection ~ 2600 1550
+Wire Wire Line
+	2600 1550 2550 1550
+$Comp
+L Device:CP C1
+U 1 1 5F97B333
+P 3700 1650
+F 0 "C1" H 3818 1696 50  0000 L CNN
+F 1 "6800u" H 3818 1605 50  0000 L CNN
+F 2 "TerminalBlock_RND:TerminalBlock_RND_205-00001_1x02_P5.00mm_Horizontal" H 3738 1500 50  0001 C CNN
+F 3 "~" H 3700 1650 50  0001 C CNN
+	1    3700 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LM7824_TO220 U1
+U 1 1 5F97E69F
+P 4900 1400
+F 0 "U1" H 4900 1642 50  0000 C CNN
+F 1 "LM7824_TO220" H 4900 1551 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4900 1625 50  0001 C CIN
+F 3 "https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF" H 4900 1350 50  0001 C CNN
+	1    4900 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 1400 3700 1400
+Wire Wire Line
+	4100 1500 4100 1400
+Connection ~ 4100 1400
+Wire Wire Line
+	4100 1400 4400 1400
+Wire Wire Line
+	3700 1500 3700 1400
+Connection ~ 3700 1400
+Wire Wire Line
+	3700 1400 4100 1400
+Wire Wire Line
+	1850 1400 1850 2050
+Wire Wire Line
+	1850 2050 3700 2050
+Wire Wire Line
+	3700 2050 3700 1800
+Wire Wire Line
+	3700 2050 4100 2050
+Wire Wire Line
+	4100 2050 4100 1800
+Connection ~ 3700 2050
+Wire Wire Line
+	4100 2050 4400 2050
+Connection ~ 4100 2050
+Wire Wire Line
+	4900 1700 4900 2050
+Connection ~ 4900 2050
+Wire Wire Line
+	4900 2050 5600 2050
+$Comp
+L Device:C C3
+U 1 1 5F981BAA
+P 5600 1650
+F 0 "C3" H 5715 1696 50  0000 L CNN
+F 1 "100u" H 5715 1605 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 5638 1500 50  0001 C CNN
+F 3 "~" H 5600 1650 50  0001 C CNN
+	1    5600 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 1400 5600 1400
+Wire Wire Line
+	5600 1500 5600 1400
+Connection ~ 5600 1400
+Wire Wire Line
+	5600 1400 6300 1400
+Wire Wire Line
+	5600 1800 5600 2050
+Connection ~ 5600 2050
+Wire Wire Line
+	5600 2050 6300 2050
+Text Label 5950 1400 0    50   ~ 0
+24V+
+Text Label 5950 2050 0    50   ~ 0
+GND
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5F983583
+P 1200 1700
+F 0 "J1" H 1118 1375 50  0000 C CNN
+F 1 "AC_IN" H 1118 1466 50  0000 C CNN
+F 2 "TerminalBlock_RND:TerminalBlock_RND_205-00001_1x02_P5.00mm_Horizontal" H 1200 1700 50  0001 C CNN
+F 3 "~" H 1200 1700 50  0001 C CNN
+	1    1200 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5F9867AC
+P 6750 1650
+F 0 "J2" H 6830 1642 50  0000 L CNN
+F 1 "DC_OUT" H 6830 1551 50  0000 L CNN
+F 2 "TerminalBlock_RND:TerminalBlock_RND_205-00001_1x02_P5.00mm_Horizontal" H 6750 1650 50  0001 C CNN
+F 3 "~" H 6750 1650 50  0001 C CNN
+	1    6750 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 1400 6300 1650
+Wire Wire Line
+	6300 1650 6550 1650
+Wire Wire Line
+	6300 2050 6300 1750
+Wire Wire Line
+	6300 1750 6550 1750
+Wire Wire Line
+	1650 1600 1650 900 
+Wire Wire Line
+	1650 900  2600 900 
+Wire Wire Line
+	2600 900  2600 1250
+Wire Wire Line
+	1650 1700 1650 1900
+Wire Wire Line
+	1650 1900 2600 1900
+Wire Wire Line
+	2600 1550 2600 1900
+Wire Wire Line
+	4400 1250 4400 1400
+Connection ~ 4400 1400
+Wire Wire Line
+	4400 1400 4600 1400
+Wire Wire Line
+	4400 2200 4400 2050
+Connection ~ 4400 2050
+Wire Wire Line
+	4400 2050 4900 2050
+Wire Wire Line
+	1400 1700 1650 1700
+Wire Wire Line
+	1400 1600 1650 1600
+$EndSCHEMATC

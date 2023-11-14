@@ -39,9 +39,9 @@ KEYSaddr = 0x20
 
 LCD_RST_PIN=23
 
-URL='http://192.168.3.122'
-MPC_URL='http://192.168.3.97:13579'
-VLC_URL='http://192.168.3.97:8080'
+URL='http://192.168._'
+MPC_URL='http://192.168._:13579'
+VLC_URL='http://192.168._:8080'
 VLC_PASS='vlc'
 
 # debug only
